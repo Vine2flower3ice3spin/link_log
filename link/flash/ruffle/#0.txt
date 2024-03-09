@@ -1,0 +1,24 @@
+
+
+http://github.com/ruffle-rs/ruffle/releases
+
+
+
+
+
+
+aria2c -c -x 4 http://github.com/ruffle-rs/ruffle/releases/download/nightly-2022-11-12/ruffle-nightly-2022_11_12-web-extension.zip
+aria2c -c -x 4 http://github.com/ruffle-rs/ruffle/releases/download/nightly-2022-11-12/ruffle-nightly-2022_11_12-web-selfhosted.zip
+aria2c -c -x 4 http://github.com/ruffle-rs/ruffle/releases/download/nightly-2022-11-12/ruffle-nightly-2022_11_12-linux-x86_64.tar.gz
+aria2c -c -x 4 http://github.com/ruffle-rs/ruffle/releases/download/nightly-2022-11-12/ruffle-nightly-2022_11_12-windows-x86_64.zip
+aria2c -c -x 4 http://github.com/ruffle-rs/ruffle/releases/download/nightly-2022-11-12/ruffle-nightly-2022_11_12-windows-x86_32.zip
+
+
+
+
+
+
+
+
+
+

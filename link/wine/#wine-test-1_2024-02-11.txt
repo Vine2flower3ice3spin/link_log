@@ -1,0 +1,124 @@
+wget -c http://dl.winehq.org/wine/wine-gecko/2.47.4/wine-gecko-2.47.4-x86.msi
+wget -c http://dl.winehq.org/wine/wine-gecko/2.47.4/wine-gecko-2.47.4-x86_64.msi
+wget -c http://dl.winehq.org/wine/wine-mono/9.0.0/wine-mono-9.0.0-x86.msi
+wget -c http://dl.winehq.org/wine/wine-mono/9.0.0/wine-mono-9.0.0-x86.tar.xz
+
+
+
+ln -s /home/vrficespin/wine/wine32 /home/vrficespin/.wine
+
+
+MESA_GL_VERSION_OVERRIDE=4.5
+MESA_GL_VERSION_OVERRIDE=4.5COMPAT
+
+MESA_GL_VERSION_OVERRIDE=3.3
+MESA_GL_VERSION_OVERRIDE=3.3COMPAT
+DXVK_HUD=full 
+
+
+WINEARCH=win64
+WINEARCH=win64 WINEPREFIX=/home/vrficespin/wine/wine32 winecfg 
+
+WINEPREFIX=/home/rficespin/debug-0/wine winecfg 
+WINEPREFIX=/home/rficespin/debug-0/wine wine64 
+
+
+
+
+####debug
+
+WINEDEBUG=+relay wine64 CubismModeler2_64.exe &> ~/wine/live2d2.1-0.log
+WINEDEBUG=trace+ole wine64 CubismModeler2_64.exe &> ~/wine/live2d2.1-0.log
+
+MESA_GL_VERSION_OVERRIDE=4.5 DRI_PRIME=pci-0000_01_00_0 WINEDEBUG=+wgl wine64 CubismEditor4_d3d.bat &> ~/wine/live2d_4.2.04-0.log
+
+WINEDEBUG=-all wine64 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe
+
+
+
+
+####debian
+MESA_LOADER_DRIVER_OVERRIDE=zink DRI_PRIME=1 wine64 /media/rficespin/debu/Steam/steamapps/common/3tene/3tene/3tene.exe
+
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_hasvk_icd.x86_64.json DRI_PRIME=0 vblank_mode=0 wine /media/rficespin/Adobe/AMD/Left\ 4\ Dead\ 2/L4D2.exe -dxlevel 90 -win -w 800
+
+
+MESA_LOADER_DRIVER_OVERRIDE=zink DRI_PRIME=pci-0000_01_00_0 wine64 /media/rficespin/debu/Steam/steamapps/common/3tene/3tene/3tene.exe
+
+
+##ys
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json MESA_LOADER_DRIVER_OVERRIDE=i915 MESA_GL_VERSION_OVERRIDE=4.5 DRI_PRIME=pci-0000_00_02_0 wine64 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe 
+
+
+##live2d
+
+#MESA_LOADER_DRIVER_OVERRIDE=zink DRI_PRIME=1 wine64 /media/rficespin/Adobe/Program\ Files/Live2D\ Cubism\ 4.2/CubismEditor4_d3d.bat
+
+cd /media/rficespin/Adobe/Program\ Files\ \(x86\)/Live2D\ Cubism\ 2.1
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json MESA_LOADER_DRIVER_OVERRIDE=i915 MESA_GL_VERSION_OVERRIDE=4.5 DRI_PRIME=pci-0000_00_02_0 wine64 CubismModeler2_64.exe		（无法保存）
+
+cd /media/rficespin/debu/Program\ Files/Live2D\ Cubism\ 4.2/
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json MESA_LOADER_DRIVER_OVERRIDE=i915 MESA_GL_VERSION_OVERRIDE=4.5 DRI_PRIME=pci-0000_00_02_0 wine64 CubismEditor4.exe		（参数限制 2）
+
+cd /media/rficespin/debu/Program\ Files/Live2D\ Cubism\ 5.0/
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json MESA_LOADER_DRIVER_OVERRIDE=i915 MESA_GL_VERSION_OVERRIDE=4.5 DRI_PRIME=pci-0000_00_02_0 wine64 CubismEditor4.exe		(字体故障，方块，参数限制 2)
+
+##live2d
+
+####debian
+
+
+
+sudo winetricks --self-update
+winetricks -f dxvk1103 mfc42 
+###大于500Mib
+quartz 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/home/vrficespin/wine/desktop/桌面
+/home/vrficespin/wine/desktop/文档
+/home/vrficespin/wine/desktop/图片
+/home/vrficespin/wine/desktop/音乐
+/home/vrficespin/wine/desktop/视频
+/home/vrficespin/wine/desktop/下载
+/home/vrficespin/wine/desktop/模板
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

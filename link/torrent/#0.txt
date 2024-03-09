@@ -1,0 +1,13 @@
+
+http://github.com/c0re100/qBittorrent-Enhanced-Edition/releases
+http://github.com/qbittorrent/qBittorrent/tags
+
+#http://www.qbittorrent.org/download.php	（timeout）
+#http://www.fosshub.com/qBittorrent.html
+http://sourceforge.net/projects/qbittorrent/files/
+
+
+
+
+
+ 

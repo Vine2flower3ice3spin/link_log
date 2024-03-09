@@ -1,0 +1,24 @@
+
+ldd /bin/ffmpeg
+ffmpeg -color
+ffmpeg -colors
+ffmpeg -muxers
+
+
+./configure 
+apt search nasm
+sudo apt install nasm yasm 
+./configure 
+./configure --help
+./configure --disable-power8 --disable-amd3dnow --disable-amd3dnowext --disable-armv5te 
+
+cd mirrors/ffmpeg
+git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+apt search libavuti
+sudo apt install libavutil-dev libavfilter-dev 
+apt search ffbuild
+
+
+sudo apt install --reinstall libva2 
+sudo apt install --reinstall libva-dev 
+ffmpeg -i 1.mkv -vcodec copy -acodec copy 1-1.mkv

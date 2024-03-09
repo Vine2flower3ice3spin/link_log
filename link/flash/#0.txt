@@ -1,0 +1,94 @@
+
+########freshplayerplugin-0.3.11
+sudo apt-get reinstall cmake gcc g++ pkg-config ragel libasound2-dev libssl-dev libglib2.0-dev libpango1.0-dev libgl1-mesa-dev libevent-dev libgtk2.0-dev libxrandr-dev libxrender-dev libxcursor-dev libv4l-dev libgles2-mesa-dev libavcodec-dev libva-dev libvdpau-dev libdrm-dev libicu-dev 
+sudo apt-get reinstall libpulse-dev 
+sudo apt-get reinstall libjack-jackd2-dev libsoxr-dev 
+
+tar -xvf freshplayerplugin-0.3.11.tar.gz
+
+cd freshplayerplugin-0.3.11 && mkdir build && cd build
+
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DWITH_HWDEC=0 ..
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DWITH_HWDEC=0 -DWITH_GLES2=0 ..
+
+make -j3
+
+########freshplayerplugin-0.3.11
+
+
+
+########
+##https://github.com/7468696e6b/adobeflash-archive
+
+####https://github.com/darktohka/clean-flash-builds/releases
+########
+
+########其他github上的
+https://github.com/darktohka/FlashPatch
+https://github.com/MIAIONE/adobe-flash-player
+
+########其他github上的
+
+
+
+########Adobe_Flash_Player_v34.0.0.305_3in1_Silent.exe
+
+https://www.52pojie.cn/thread-1871592-1-1.html
+
+########Adobe_Flash_Player_v34.0.0.305_3in1_Silent.exe
+
+
+
+
+
+
+
+
+
+
+
+########只能在互联网档案馆获取的
+
+@rabcor Yes, if you use a browser that supports NPAPI plugins (such as Waterfox), and add the site you want to use in /etc/adobe/mms.cfg like so:
+
+SilentAutoUpdateEnable=0
+AutoUpdateDisable=1
+EOLUninstallDisable=1
+EnableAllowList=1
+AllowListUrlPattern=file:///
+AllowListUrlPattern=*://example.com/
+AllowListUrlPattern=*://*.4chan.org/
+AllowListUrlPattern=*://*.4cdn.org/
+AllowListUrlPattern=*://*.github.io/
+
+ kaizo commented on 2021-03-05 20:08 (UTC) (edited on 2021-03-05 20:09 (UTC) by kaizo)
+
+Instead of abandoning this package completely, would you consider replacing the download links from the Wayback Machine?
+They function as drop-in replacements, the hashes match those already in the package(s) as one would expect.
+
+NPAPI: https://web.archive.org/web/20210126102538if_/https://fpdownload.adobe.com/get/flashplayer/pdc/32.0.0.465/flash_player_npapi_linux.x86_64.tar.gz
+
+PPAPI: https://web.archive.org/web/20210116212416if_/https://fpdownload.adobe.com/get/flashplayer/pdc/32.0.0.465/flash_player_ppapi_linux.x86_64.tar.gz
+
+If not, would you considering at passing the roll of maintainer on to someone else or orphaning the package entirely?
+
+
+########只能在互联网档案馆获取的
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

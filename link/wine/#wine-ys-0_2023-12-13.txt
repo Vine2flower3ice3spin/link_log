@@ -1,0 +1,262 @@
+################################4.2################################
+#配置环境，需根据实际情况调整，
+#假设ntfs分区 E: 挂载在 /media/rficespin/Adobe ，原神已安装在 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/ 
+#假设ntfs分区 A: 挂载在/media/rficespin/debu ，云原神安装在 /media/rficespin/debu/Program\ Files/enshin\ Impact\ Cloud\ Game/ 
+#原本用 wine-Staging 的 8.21~bookworm-1 ，最新的9-rc1似乎有问题，
+#sudo apt install {wine-staging,wine-staging-amd64,winehq-staging,wine-staging-dev,wine-staging-dbg,wine-staging-i386:i386}=8.21~bookworm-1
+
+
+mkdir -p ~/wine-ys/{desk,wine} && cd ~/wine-ys 
+mkdir desk/{下载,图片,视频,桌面,音乐,文档,模板} && mkdir -p ~/wine-ys/wine/drive_c/users/（users需手动修改） 
+ln -s ~/wine-ys/desk/下载 ~/wine-ys/wine/drive_c/users/（users需手动修改）/Downloads 
+ln -s ~/wine-ys/desk/图片 ~/wine-ys/wine/drive_c/users/（users需手动修改）/Pictures 
+ln -s ~/wine-ys/desk/视频 ~/wine-ys/wine/drive_c/users/（users需手动修改）/Videos 
+ln -s ~/wine-ys/desk/桌面 ~/wine-ys/wine/drive_c/users/（users需手动修改）/Desktop 
+ln -s ~/wine-ys/desk/音乐 ~/wine-ys/wine/drive_c/users/（users需手动修改）/Music 
+ln -s ~/wine-ys/desk/文档 ~/wine-ys/wine/drive_c/users/（users需手动修改）/Documents 
+
+#ln -s ~/wine-ys/desk/模板 ~/wine-ys/wine/drive_c/users/（users需手动修改）/Templates 
+#ln -s ~/wine-ys/desk/模板 ~/wine-ys/wine/drive_c/users/（users需手动修改）/模板 
+#这两条没用，“模板”需之后在winecfg > 桌面整合 中手动选择
+#先把 ~/wine-ys/wine/drive_c/users/ 中的“（users需手动修改）”重命名为users用户名，比如我是 rficespin ，然后再继续
+
+
+WINEPREFIX=~/wine-ys/wine winecfg
+#x11下建议启用虚拟桌面，有些软件需要用虚拟桌面，wayland下除非确定没问题否则别启用虚拟桌面，可能会再也打不开，得在x11下关掉才能再打开，
+
+
+rm ~/wine-ys/wine/dosdevices/e:: 
+ln -s /media/rficespin/debu ~/wine-ys/wine/dosdevices/a: 
+ln -s /media/rficespin/Adobe ~/wine-ys/wine/dosdevices/e: 
+#需要先运行一次winecfg后再进行，先创建 ~/wine-ys/wine/dosdevices 会导致卡死，
+
+#winecfg > 驱动器 > a:/e: > 显示高级选项 中，把类型修改为 本地硬盘 ，以避免变动，根据需要加，
+
+
+WINEPREFIX=~/wine-ys/wine winetricks -f dxvk1103 
+
+WINEPREFIX=~/wine-ys/wine wine64 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe 
+
+WINEPREFIX=~/wine-ys/wine wine64 /media/rficespin/debu/Program\ Files/Genshin\ Impact\ Cloud\ Game/Genshin\ Impact\ Cloud\ Game.exe 
+
+#启动游戏后可能会在登陆时卡验证
+#方法A：直接手机端云原神或米游社扫码登陆
+##未知故障，9-rc1，扫码登录，第一次登陆成功，但从第二次开始报环境异常，
+#方法B：安装、启动云原神PC端并登陆一次（用来过验证，由于某些问题会无法进入游戏），然后启动游戏用同一账号登陆
+##未知故障，9-rc1，无法输入密码，用短信验证码登陆但报环境异常，
+
+
+
+#9-rc1，环境异常，
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json DRI_PRIME=pci-0000_00_02_0 WINEPREFIX=~/wine-ys/wine wine64 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe 
+
+################################4.2################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################CBT1################################
+####	https://blog.jixiaob.cn/?post=94
+##①下载CBT1的游戏本体。
+是一个3.41G的压缩包。
+
+可以在科学上网之后从这个地方下载：
+https://archive.org/download/genshin-impact-cbt-1/Genshin%20Impact%20CBT1.rar
+
+也可以用这个磁力链接：
+magnet:?xt=urn:btih:91155B52125B25752485CB73868FC7484AB246AE
+
+##②下载服务端和res资源文件
+
+服务端：https://github.com/LDAsuku/soggy
+
+点code→download zip
+
+res资源文件：https://codeberg.org/LDA_suku/soggy_resources
+点下载按钮→下载zip
+git clone https://codeberg.org/LDA_suku/soggy_resources.git
+
+
+##③自行编译服务端或者找个别人编译好的
+
+这个私服的gameserver是拿cpp写的，所以不同平台需要自行编译，
+
+这里有一个编译好的windows的版本可以直接下载打开使用（这个甚至连res资源文件都给你搞好了可以直接打开使用）：
+
+https://t.me/Genshin_Yuban/7089
+
+
+如果要自行编译：
+
+我是用它推荐的方法2在win环境上编译的
+首先下载安装MSYS2 
+https://github.com/msys2/msys2-installer/releases/download/2022-10-28/msys2-x86_64-20221028.exe
+然后打开MSYS2 MINGW64
+注意：安装时路径不要有中文、空格或者特殊字符，否则安装依赖环境的时候可能会报错！
+用cd命令切换到你刚刚下载解压的服务端的路径，比如cd "D:\Genshin\servers\soggy"
+输入以下命令安装依赖环境
+pacman -S ${MINGW_PACKAGE_PREFIX}-{toolchain,cmake,protobuf,lua}
+然后
+pacman -S make
+做好编译准备
+cmake -B build -G "Unix Makefiles"
+编译
+cmake --build build -j8
+（该过程会大量消耗CPU，大概编译个十几分钟就好了）
+完成之后，从你的mingw64的安装路径的bin文件夹（比如C:\msys64\mingw64\bin）复制几个文件到soggy/build文件夹（和soggy.exe放在同一个目录下）
+libgcc_s_seh-1.dll
+libprotobuf.dll
+libstdc++-6.dll
+libwinpthread-1.dll
+lua54.dll
+zlib1.dll
+
+##④最后的工作
+
+把之前下载的资源文件soggy_resources重命名为resources然后把这个文件夹放在和soggy.exe放在同一个目录下。
+在dispatch.py旁边新建一个启动脚本start dispatch.bat，里面写着：
+
+##############################################
+python dispatch.py
+pause
+
+##############################################
+
+然后打开，看看会不会报错，如果报错说什么文件soggy_cat.png没找到可以把static文件夹里面的这个图片文件复制一份出来。
+然后打开soggy.exe启动服务器，也有可能直接闪退，如果你能看见报错大概是因为缺少配置文件，从上级目录复制一个soggy.cfg进来大概就好了。
+如果还是闪退可能是另一个很神奇的错误
+terminate called after throwing an instance of ‘std::runtime_error’ what():
+这个错误，这个错误很玄学，有时候就有然后闪退，有时候自己就好了
+我的解决方案是写个bat让他自己失败之后重试，这样大概他自己重试三五次就能打开了
+
+##############################################
+@echo off
+ 
+FOR /L %%i IN (1,1,10) DO (
+soggy.exe
+cls
+)
+pause
+
+##############################################
+
+##⑤使用Fiddler代理并打开游戏。
+又是我们熟悉的Fiddler代理。如果不清楚如何安装Fiddler或者如何设置Fiddler Script可以参考我的这一篇博客里的代理部分：https://blog.jixiaob.cn/?post=83
+这里直接放上脚本（和之前不同的是这里会使用http而不是https
+
+##############################################
+import System;
+import System.Windows.Forms;
+import Fiddler;
+import System.Text.RegularExpressions;
+class Handlers
+{
+    static function OnBeforeRequest(oS: Session) {
+        if
+        (
+               oS.host.EndsWith(".yuanshen.com")
+            || oS.host.EndsWith(".hoyoverse.com")
+            || oS.host.EndsWith(".mihoyo.com")
+            || oS.uriContains("http://overseauspider.yuanshen.com:8888/log")
+            || oS.host.EndsWith(".yuanshen.com:12401")
+        ) { 
+            
+            oS.host = "127.0.0.1";
+            // Only for CBT-1
+            oS.oRequest.headers.UriScheme = "http";
+            oS.port = 8099;
+        }
+    }
+};
+
+##############################################
+
+
+代理成功后就可以启动游戏了。
+老样子，账号密码随便输，然后直接进游戏。
+
+如果要切换队伍角色，可以到猫尾酒馆门口找那个冒险家艾尔菲切换，或者在控制台输入elfie吧艾尔菲召唤出来然后对话切换角色。
+另外背包和角色面板的键位也改了，背包是I不是B，角色是K不是C，具体可以看游戏内设置。
+
+地图自然也是只有蒙德地区的
+
+##关于配置文件：
+
+如果要放到服务器上：
+如果要放在服务器上要怎么修改配置文件呢？
+首先，dispatch.py中的前几行：
+
+##############################################
+DISPATCH_LISTEN = "0.0.0.0"
+DISPATCH_PORT = 8099    # dispatch服务的端口
+DISPATCH_ROUTE_URL = "http://localhost:8099"  # 这里也记得改一下服务器的ip:端口
+ 
+GAME_IP = "localhost"    # gameserver的ip，也就是服务器ip
+GAME_PORT = 22102     # gameserver的端口
+ 
+GAME_RES_CUR_VERSION = 138541
+DESIGN_DATA_CUR_VERSION = 138541
+
+##############################################
+
+如果要改开头选服的那个名称可以改REGION_TITLES
+
+
+还有soggy.cfg（是和soggy.exe同路径的那个文件）
+
+##############################################
+# soggy.cfg
+ 
+[common]
+game_res_version=138541
+design_data_version=138541
+ 
+[dispatch]
+bind_addr=0.0.0.0
+bind_port=8099    # 改成服务器的dispatch端口
+route_url=http://localhost:8099     #  dispatch服务器ip:端口
+game_addr=localhost    # gameserver服务器ip
+game_port=22102       #  gameserver服务器端口
+region_title=100% real cbt1 server
+feedback_url=https://cdn.discordapp.com/attachments/441109559004889098/1043690740397641748/unknown.png
+notices_url=https://cdn.discordapp.com/attachments/441109559004889098/1043690740397641748/unknown.png
+guide_url=https://cdn.discordapp.com/attachments/441109559004889098/1043690740397641748/unknown.png
+ 
+[game]
+bind_addr=0.0.0.0
+bind_port=22102    #  gameserver服务器端口
+max_clients=16      # 可能是最大同时在线的玩家数，我没测试
+
+
+##############################################
+################################CBT1################################
+
+
+

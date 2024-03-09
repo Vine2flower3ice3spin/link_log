@@ -1,0 +1,14 @@
+
+http://obsproject.com/download
+http://github.com/obsproject/obs-studio/releases
+
+http://launchpad.net/~obsproject/+archive/ubuntu/obs-studio
+http://ppa.launchpadcontent.net/obsproject/obs-studio/ubuntu
+http://blog.skk.moe/post/add-ppa-to-debian/
+
+
+
+
+
+
+

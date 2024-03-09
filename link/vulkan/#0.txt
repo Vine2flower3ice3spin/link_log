@@ -1,0 +1,100 @@
+
+
+
+#http://vulkanruntimelibraries.com/
+http://vulkan.lunarg.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deb https://packages.lunarg.com/vulkan bionic main
+ deb-src https://packages.lunarg.com/vulkan bionic main
+
+
+
+#Ubuntu 18.04 (Bionic Beaver)
+
+wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-bionic.list http://packages.lunarg.com/vulkan/lunarg-vulkan-bionic.list
+sudo apt update
+sudo apt install vulkan-sdk
+
+#Ubuntu 20.04 (Focal Fossa)
+
+wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-focal.list http://packages.lunarg.com/vulkan/lunarg-vulkan-focal.list
+sudo apt update
+sudo apt install vulkan-sdk
+
+
+
+
+
+#System Locations
+
+If you have installed a Vulkan driver from a GPU vendor, you may wish to verify there is a JSON file installed in one of the following locations:
+Directory 	Description
+/etc/vulkan/icd.d/ or /usr/share/vulkan/icd.d 	Vulkan driver JSON manifest file, which is not modified by the SDK installer.
+
+Refer to the Vulkan Loader guide, Linux section, for detailed information on ICD and layer library search paths and order for this platform.
+
+
+#Verify the SDK Installation
+
+Verify the installation of the Vulkan SDK by running:
+
+    Vulkan Installation Analyzer (VIA) with the command:
+
+~$ vkvia
+
+    Vulkan Info with the command:
+
+`~$ vulkaninfo
+
+    Vulkan Cube with the command:
+
+`~$ vkcube
+
+
+#Vulkan SDK Layers list
+
+The Vulkan SDK includes the following layers:
+Layer Name 	Description
+VK_LAYER_KHRONOS_validation 	Vulkan API validation and error checking
+VK_LAYER_LUNARG_gfxreconstruct 	Capturing application Vulkan commands for GFXReconstruct
+VK_LAYER_LUNARG_api_dump 	Print API calls and their parameters and values
+VK_LAYER_LUNARG_device_simulation 	Allows modification of an actual device's reported features, limits, and capabilities
+VK_LAYER_LUNARG_monitor 	Outputs the frames-per-second of the target application in the applications title bar
+VK_LAYER_LUNARG_screenshot 	Outputs specified frames to an image file as they are presented
+VK_LAYER_KHRONOS_synchronization2 	Implements the VK_KHR_synchronization2 extension, for use on systems without a driver that implements it.
+
+
+#VK_INSTANCE_LAYERS environment variable
+
+The Vulkan Layers can be enabled by setting the VK_INSTANCE_LAYERS environment variable to a colon-separated list of layer names, as found in the Vulkan SDK Layers list or within the manifest files.
+
+$ export VK_INSTANCE_LAYERS=VK_LAYER_KHRONOS_validation:VK_LAYER_LUNARG_gfxreconstruct

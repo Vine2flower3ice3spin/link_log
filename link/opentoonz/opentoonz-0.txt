@@ -1,0 +1,14 @@
+
+winetricks glut 
+
+
+https://opentoonz.github.io/
+
+
+#wget -c http://github.com/opentoonz/opentoonz/releases/download/v1.6.0/OpenToonzSetup.exe
+
+
+
+
+
+

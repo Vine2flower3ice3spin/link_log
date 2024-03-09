@@ -1,0 +1,45 @@
+
+Device name is not provided.
+You can pass devicename[,opt1=val1[,opt2=val2...]] as an argument.
+
+Auto-detected sinks for alsa:
+  null [Discard all samples (playback) or generate zero samples (capture)] (none)
+  lavrate [Rate Converter Plugin Using Libav/FFmpeg Library] (none)
+  samplerate [Rate Converter Plugin Using Samplerate Library] (none)
+  speexrate [Rate Converter Plugin Using Speex Resampler] (none)
+  jack [JACK Audio Connection Kit] (none)
+  oss [Open Sound System] (none)
+  pipewire [PipeWire Sound Server] (none)
+  pulse [PulseAudio Sound Server] (none)
+  speex [Plugin using Speex DSP (resample, agc, denoise, echo, dereverb)] (none)
+  upmix [Plugin for channel upmix (4,6,8)] (none)
+  vdownmix [Plugin for channel downmix (stereo) with a simple spacialization] (none)
+* default [Default ALSA Output (currently PipeWire Media Server)] (none)
+  hw:CARD=Intel,DEV=0 [Direct hardware device without any conversions] (none)
+  plughw:CARD=Intel,DEV=0 [Hardware device with all software conversions] (none)
+  sysdefault:CARD=Intel [Default Audio Device] (none)
+  front:CARD=Intel,DEV=0 [Front output / input] (none)
+  surround21:CARD=Intel,DEV=0 [2.1 Surround output to Front and Subwoofer speakers] (none)
+  surround40:CARD=Intel,DEV=0 [4.0 Surround output to Front and Rear speakers] (none)
+  surround41:CARD=Intel,DEV=0 [4.1 Surround output to Front, Rear and Subwoofer speakers] (none)
+  surround50:CARD=Intel,DEV=0 [5.0 Surround output to Front, Center and Rear speakers] (none)
+  surround51:CARD=Intel,DEV=0 [5.1 Surround output to Front, Center, Rear and Subwoofer speakers] (none)
+  surround71:CARD=Intel,DEV=0 [7.1 Surround output to Front, Center, Side, Rear and Woofer speakers] (none)
+  dmix:CARD=Intel,DEV=0 [Direct sample mixing device] (none)
+  usbstream:CARD=Intel [USB Stream Output] (none)
+Auto-detected sinks for oss:
+Cannot list sinks: Function not implemented
+Auto-detected sinks for pulse:
+* alsa_output.pci-0000_00_1b.0.analog-stereo [内置音频 模拟立体声] (none)
+Auto-detected sinks for caca:
+Cannot list sinks: Function not implemented
+Auto-detected sinks for fbdev:
+* /dev/fb0 [i915drmfb] (none)
+Auto-detected sinks for opengl:
+Cannot list sinks: Function not implemented
+Auto-detected sinks for sdl,sdl2:
+Cannot list sinks: Function not implemented
+Auto-detected sinks for video4linux2,v4l2:
+Cannot list sinks: Function not implemented
+Auto-detected sinks for xv:
+Cannot list sinks: Function not implemented

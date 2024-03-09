@@ -1,0 +1,23 @@
+
+
+
+
+./configure --help
+
+./configure
+make 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,15 @@
+git clone http://github.com/Ardour/ardour.git
+
+
+
+
+
+
+python3.9 ./waf configure
+python3.9 ./waf 
+
+python3.9 ./waf install
+
+
+python3.9 ./waf clean
+

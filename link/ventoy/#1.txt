@@ -1,0 +1,82 @@
+
+http://github.com/ventoy/Ventoy/releases
+
+aria2c -x 4 -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-linux.tar.gz"
+aria2c -x 4 -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-windows.zip"
+aria2c -x 4 -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-livecd.iso"
+
+wget -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-linux.tar.gz"
+wget -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-windows.zip"
+wget -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-livecd.iso"
+
+sudo ./Ventoy2Disk.sh --help
+sudo ./Ventoy2Disk.sh -u /dev/sdd
+
+sudo ./Ventoy2Disk.sh -i -n /dev/sdc
+
+
+
+
+
+#######################################################################
+**********************************************
+      Ventoy: 1.0.80  x86_64
+      longpanda admin@ventoy.net
+      https://www.ventoy.net
+**********************************************
+
+Usage:  Ventoy2Disk.sh CMD [ OPTION ] /dev/sdX
+  CMD:
+   -i  install Ventoy to sdX (fails if disk already installed with Ventoy)
+   -I  force install Ventoy to sdX (no matter if installed or not)
+   -u  update Ventoy in sdX
+   -l  list Ventoy information in sdX
+
+  OPTION: (optional)
+   -r SIZE_MB  preserve some space at the bottom of the disk (only for install)
+   -s/-S       enable/disable secure boot support (default is enabled)
+   -g          use GPT partition style, default is MBR (only for install)
+   -L          Label of the 1st exfat partition (default is Ventoy)
+   -n          try non-destructive installation (only for install)
+
+
+
+
+**********************************************
+    Ventoy: 1.0.80 x86_64
+    longpanda admin@ventoy.net
+    https://www.ventoy.net
+**********************************************
+
+使用方法:   Ventoy2Disk.sh CMD [OPTION] /dev/sdX
+    CMD:
+    -i:    将Ventoy安装到sdX(如果磁盘已经安装了Ventoy则失败)
+    -I:    强制安装Ventoy到sdX(无论是否安装)
+    -u:    更新sdX中的Ventoy
+    -l:    在sdX中列出Ventoy信息
+
+    选择: (可选)
+    -r SIZE_MB  在磁盘底部保留一些空间(仅用于安装)
+    -s/-S       启用/禁用安全引导支持(默认启用)
+    -g          使用GPT分区样式，默认为MBR(仅用于安装)
+    -L          第一个exfat分区的标签(默认是Ventoy)
+    -n          尝试无损安装(仅用于安装)
+
+
+#######################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

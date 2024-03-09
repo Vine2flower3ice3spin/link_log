@@ -1,0 +1,724 @@
+# Host addresses
+127.0.0.1  localhost
+127.0.1.1  vrficespin-tobefilledbyoem
+::1        localhost ip6-localhost ip6-loopback
+ff02::1    ip6-allnodes
+ff02::2    ip6-allrouters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####404
+127.0.0.1 182.43.124.6
+127.0.0.1 45.195.197.155
+127.0.0.1 cytcm.com
+127.0.0.1 mimiming.com
+127.0.0.1 browser-update.org
+
+0.0.0.0 bandicam.com
+0.0.0.0 ssl.bandicam.com
+0.0.0.0 ssl.bandisoft.com
+0.0.0.0 cert.bandicam.com
+0.0.0.0 cert.bandicam.com
+0.0.0.0 www.bandicam.com
+#0.0.0.0 sweclockers.com
+0.0.0.0 androidx86.net
+
+
+127.0.0.1 maxcdn.bootstrapcdn.com
+
+127.0.0.1 pc0359.cn
+127.0.0.1 content1.avplayer.com
+127.0.0.1 wwwwwwww.ber
+127.0.0.1 qqqqqqqq.cc
+127.0.0.1 ashurwerj.null
+
+
+
+####302
+
+
+
+
+####200
+##google
+203.208.40.34 translate.google.com
+#203.208.40.34 translate.google.cn
+180.163.151.34 translate.google.cn
+fe80:: translate.google.cn
+
+220.181.174.102 pagead2.googlesyndication.com
+220.181.174.166 partner.googleadservices.com
+#220.181.174.102 partner.googleadservices.com
+203.208.50.36 tpc.googlesyndication.com
+
+127.0.0.1 youtube.com
+#172.217.27.36 google-analytics.com
+127.0.0.1 google-analytics.com
+#142.250.204.110 www.google-analytics.com
+127.0.0.1 www.google-analytics.com
+#127.0.0.1 googleapis.com
+127.0.0.1 googleapis.com
+#127.0.0.1 www.googleapis.com
+127.0.0.1 www.googleapis.com
+# 127.0.0.1 imasdk.googleapis.com
+127.0.0.1 imasdk.googleapis.com
+180.163.150.41 googletagmanager.com
+# 127.0.0.1 googletagmanager.com
+180.163.150.41 www.googletagmanager.com
+# 127.0.0.1 www.googletagmanager.com
+# 127.0.0.1 google.com
+127.0.0.1 google.com
+# 127.0.0.1 www.google.com
+127.0.0.1 www.google.com
+127.0.0.1 ajax.googleapis.com
+# 127.0.0.1 ajax.googleapis.com
+# 127.0.0.1 apis.google.com
+127.0.0.1 apis.google.com
+58.63.233.102 adservice.google.com
+# 127.0.0.1 adservice.google.com
+##google
+
+##ad
+220.181.174.37 ad.doubleclick.net
+220.181.174.38 googleads.g.doubleclick.net
+#180.163.151.166 googleads.g.doubleclick.net
+# 127.0.0.1 googleads.g.doubleclick.net
+220.181.174.102 stats.g.doubleclick.net
+#2401:3800:4001:802::1006 stats.g.doubleclick.net
+#113.108.239.230 cm.g.doubleclick.net
+# 127.0.0.1 cm.g.doubleclick.net
+220.181.174.102 cm.g.doubleclick.net
+# 220.181.174.166 cm.g.doubleclick.net
+113.108.239.230 securepubads.g.doubleclick.net
+# 127.0.0.1 securepubads.g.doubleclick.net
+##ad
+
+##pixiv
+#104.20.0.127 pixiv.cat
+#104.20.0.127 pixiv.re
+#104.21.47.81 pixiv.cat
+#104.21.47.81 pixiv.re
+104.21.234.146 pixiv.re
+#104.21.234.147 pixiv.re
+104.21.234.146 pixiv.cat
+#104.21.234.147 pixiv.cat
+#172.67.170.200 pixiv.cat
+#172.67.170.200 pixiv.re
+#2606:4700:3032::ac43:aac8 pixiv.cat
+#2606:4700:3032::ac43:aac8 pixiv.re
+#2606:4700:3030::6815:2f51 pixiv.cat
+#2606:4700:3030::6815:2f51 pixiv.re
+##pixiv
+
+
+######github
+
+##github.com
+#13.114.40.48 github.com
+#20.27.177.113  github.com
+20.200.245.247 github.com
+#20.205.243.166  github.com
+#140.82.112.3 github.com
+#140.82.121.3 github.com
+#140.82.121.4 github.com
+#192.30.255.112 github.com
+#192.30.255.113 github.com
+
+##raw.githubusercontent.com
+#185.199.108.133 raw.githubusercontent.com
+#185.199.109.133 raw.githubusercontent.com
+#185.199.110.133 raw.githubusercontent.com
+185.199.111.133 raw.githubusercontent.com
+
+##objects.githubusercontent.com
+#185.199.108.133 objects.githubusercontent.com
+#185.199.109.133 objects.githubusercontent.com
+#185.199.110.133 objects.githubusercontent.com
+185.199.111.133 objects.githubusercontent.com
+
+##github.githubassets.com
+185.199.108.154 github.githubassets.com
+#185.199.109.154 github.githubassets.com
+#185.199.110.154 github.githubassets.com
+#185.199.111.154 github.githubassets.com
+
+##collector.github.com
+#140.82.112.21 collector.github.com
+#140.82.112.22 collector.github.com
+#140.82.113.21 collector.github.com
+#140.82.113.22 collector.github.com
+#140.82.114.21 collector.github.com
+140.82.114.22 collector.github.com
+
+##gist.github.com
+#140.82.112.3 gist.github.com
+140.82.112.4 gist.github.com
+#140.82.113.3 gist.github.com
+#140.82.113.4 gist.github.com
+#140.82.114.3 gist.github.com
+#140.82.114.4 gist.github.com
+#140.82.121.3 gist.github.com
+#140.82.121.4 gist.github.com
+
+##api.github.com
+#20.205.243.168 api.github.com
+#140.82.121.5 api.github.com
+#192.30.255.116 api.github.com
+
+######github
+
+
+##wine
+146.75.114.217 dl.winehq.org
+#151.101.2.217 dl.winehq.org
+#151.101.66.217 dl.winehq.org
+#151.101.110.217 dl.winehq.org
+#151.101.194.217 dl.winehq.org
+
+##wine
+
+##腾讯
+14.18.245.237 mail.qq.com
+#240e:ff:f101:10::130 mail.qq.com
+##腾讯
+
+##龙芯loongson
+#114.242.206.189 ftp.loongnix.cn
+##龙芯loongson
+
+##开源中国
+180.76.198.147 my.oschina.net
+180.76.198.147 www.oschina.net
+##开源中国
+
+##统信
+101.37.43.176 chinauos.com
+#114.55.93.175 chinauos.com
+121.36.167.218 account.chinauos.com
+47.56.88.11 bbs.chinauos.com
+##统信
+
+##微软
+13.107.42.13 onedrive.live.com
+127.0.0.1 pipe.aria.microsoft.com
+
+204.79.197.219 msn.com
+#127.0.0.1 www.msn.com
+204.79.197.203 www.msn.com
+#203.107.6.88 ntp.msn.com
+#204.79.197.203 ntp.msn.com
+#0.0.0.0 c.msn.com
+#20.125.62.241 c.msn.com
+#20.205.115.81 c.msn.com
+127.0.0.1 web.vortex.data.microsoft.com
+127.0.0.1 browser.events.data.msn.com
+##微软
+
+##开源
+#195.135.221.134 download.opensuse.org
+##开源
+
+##vroid
+210.140.214.71 download.vroid.com
+#210.140.214.74 download.vroid.com
+#210.140.214.77 download.vroid.com
+##vroid
+
+##gaming
+104.18.33.131 launcher.store.epicgames.com
+#172.64.154.125 launcher.store.epicgames.com
+#2606:4700:4400::6812:2183 launcher.store.epicgames.com
+#2606:4700:4400::ac40:9a7d launcher.store.epicgames.com
+##gaming
+
+##mc
+# 127.0.0.1 www.curseforge.com
+# 127.0.0.1 www.curseforge.com
+108.139.1.13 mediafilez.forgecdn.net
+# 127.0.0.1 mediafilez.forgecdn.net
+# 13.35.166.101 configs.forgecdn.net
+13.35.166.103 configs.forgecdn.net
+# 18.66.112.74 configs.forgecdn.net
+# 127.0.0.1 configs.forgecdn.net
+##mc
+
+##原神私服及CBT1教程的文章
+#104.21.49.218 proxy-cdn1.yuukiz.workers.dev
+##104.21.95.253 proxy-cdn1.yuukiz.workers.dev
+##172.67.171.233 proxy-cdn1.yuukiz.workers.dev
+172.67.195.13 proxy-cdn1.yuukiz.workers.dev
+##原神私服及CBT1教程的文章
+
+######other
+199.36.158.100 chromium.org
+2001:4860:4802:32::1b chromium.org
+104.78.94.149 javadl.oracle.com
+#2620:1ec:c11::200 bing.com
+51.75.66.89 nomad-group.net
+178.33.105.203 download.xnview.com
+
+
+180.163.150.162 cdn.ampproject.org
+#104.16.85.20 cdn.jsdelivr.net
+151.101.65.229 cdn.jsdelivr.net
+35.244.159.8 u.openx.net
+172.67.13.182 spl.zeotap.com
+
+##criteo.com
+# 13.224.132.53 criteo.com
+# 52.85.132.88 criteo.com
+65.8.228.5 criteo.com
+# 127.0.0.1 criteo.com
+74.119.118.151 bidder.criteo.com
+# 127.0.0.1 bidder.criteo.com
+# 178.250.0.165 bidder.criteo.com
+## 178.250.2.131 bidder.criteo.com
+# 182.161.73.145 bidder.criteo.com
+##criteo.com
+
+######other
+
+
+
+
+
+######other 2
+127.0.0.1 ad.360yield.com
+104.22.54.206 i.connectad.io
+# 127.0.0.1 i.connectad.io
+104.22.54.206 cdn.connectad.io
+# 127.0.0.1 cdn.connectad.io
+127.0.0.1 ap.lijit.com
+127.0.0.1 ce.lijit.com
+35.190.60.146 id.rlcdn.com
+# 127.0.0.1 id.rlcdn.com
+35.212.212.222 rtb.mfadsrvr.com
+# 127.0.0.1 rtb.mfadsrvr.com
+35.244.159.8 us-u.openx.net
+# 127.0.0.1 us-u.openx.net
+127.0.0.1 usersync.gumgum.com
+162.19.138.117 id5-sync.com
+# 127.0.0.1 id5-sync.com
+# 127.0.0.1 btlr.sharethrough.com
+# 127.0.0.1 fastlane.rubiconproject.com
+# 127.0.0.1 longitudeads.com
+# 127.0.0.1 quantcast.com
+184.72.53.11 adserver.org
+# 127.0.0.1 adserver.org
+34.149.20.76 ssc.33across.com
+# 127.0.0.1 ssc.33across.com
+127.0.0.1 giobal.ib-ibi.com
+127.0.0.1 tlx.3lift.com
+# 127.0.0.1 x.bidswitch.net
+# 127.0.0.1 btlr.sharethrough.com
+# 127.0.0.1 htlb.casalemedia.com
+# 127.0.0.1 aax-dtb-cf.amazon-adsystem.com
+209.54.182.161 s.amazon-adsystem.com
+# 52.46.130.91 s.amazon-adsystem.com
+# 127.0.0.1 s.amazon-adsystem.com
+18.155.199.131 static-cdn.jtvnw.net
+# 127.0.0.1 static-cdn.jtvnw.net
+127.0.0.1 d.adroll.com
+35.244.174.68 id.rlcdn.com
+#35.190.60.146 id.rlcdn.com
+# 127.0.0.1 id.rlcdn.com
+127.0.0.1 ups.analytics.yahoo.com
+74.118.186.44 sync.1rx.io
+# 127.0.0.1 sync.1rx.io
+23.45.60.26 contextual.media.net
+# 127.0.0.1 contextual.media.net
+######other 2
+
+
+
+
+
+
+
+
+
+
+
+##503
+#2001::1f0d:4811 nicovideo.jp
+#69.171.230.18 nicovideo.jp
+#2001::1f0d:5501 www.nicovideo.jp
+#69.171.248.112 www.nicovideo.jp
+
+#蒲公英pt
+2606:4700:30::6818:7312 npupt.com
+2606:4700:30::6818:7312 6.npupt.com
+
+
+
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+# 127.0.0.1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+########屏蔽思杰马克丁
+
+
+
+### Flash (CN)
+127.0.0.1 flash.cn
+127.0.0.1 www.flash.cn
+127.0.0.1 flash.com
+127.0.0.1 www.flash.com
+127.0.0.1 flash.com.cn
+127.0.0.1 www.flash.com.cn
+
+127.0.0.1 adobe.cn
+127.0.0.1 adobe.cn
+127.0.0.1 geo1.adobe.cn
+127.0.0.1 geo2.adobe.cn
+fe80::1 geo2.adobe.cn
+127.0.0.1 get.adobe.cn
+127.0.0.1 geo1.adobe.com
+127.0.0.1 geo2.adobe.com
+fe80::1 geo2.adobe.com
+127.0.0.1 get.adobe.com
+127.0.0.1 geo1.adobe.com.cn
+127.0.0.1 geo2.adobe.com.cn
+127.0.0.1 get.adobe.com.cn
+
+127.0.0.1 2144.cn
+127.0.0.1 www.2144.cn
+127.0.0.1 flash.2144.cn
+127.0.0.1 2144.com
+127.0.0.1 www.2144.com
+127.0.0.1 flash.2144.com
+127.0.0.1 2144.com.cn
+127.0.0.1 www.2144.com.cn
+127.0.0.1 flash.2144.com.cn
+
+127.0.0.1 fpdownload.macromedia.cn
+127.0.0.1 fpdownload1.macromedia.cn
+127.0.0.1 fpdownload2.macromedia.cn
+127.0.0.1 fpdownload.macromedia.com
+127.0.0.1 fpdownload1.macromedia.com
+127.0.0.1 fpdownload2.macromedia.com
+127.0.0.1 fpdownload.macromedia.com.cn
+127.0.0.1 fpdownload2.macromedia.com.cn
+127.0.0.1 fpdownload.imacromedia.cn
+127.0.0.1 fpdownload1.imacromedia.cn
+127.0.0.1 fpdownload2.imacromedia.cn
+127.0.0.1 fpdownload.imacromedia.com
+127.0.0.1 fpdownload1.imacromedia.com
+127.0.0.1 fpdownload2.imacromedia.com
+127.0.0.1 macromedia.cn
+127.0.0.1 macromedia.com
+127.0.0.1 macromedia.com.cn
+127.0.0.1 imacromedia.cn
+127.0.0.1 imacromedia.com
+127.0.0.1 www.macromedia.cn
+127.0.0.1 www.macromedia.com
+127.0.0.1 www.macromedia.com.cn
+
+
+##Mairuan
+127.0.0.1 mairuan.cn
+127.0.0.1 www.mairuan.cn
+127.0.0.1 xia.mairuan.cn
+127.0.0.1 mairuan.com
+127.0.0.1 www.mairuan.com
+127.0.0.1 xia.mairuan.com
+127.0.0.1 mairuan.com.cn
+127.0.0.1 www.mairuan.com.cn
+127.0.0.1 xia.mairuan.com.cn
+127.0.0.1 mairuan.net
+127.0.0.1 www.mairuan.net
+127.0.0.1 xia.mairuan.net
+127.0.0.1 hypersnap.mairuan.com
+127.0.0.1 logoshejishi.mairuan.com
+127.0.0.1 mairuanwang.cn
+127.0.0.1 www.mairuanwang.cn
+127.0.0.1 mairuanwang.com
+127.0.0.1 www.mairuanwang.com
+
+##Makeding
+127.0.0.1 makeding.com
+127.0.0.1 www.makeding.com
+127.0.0.1 vm.makeding.com
+127.0.0.1 wm.makeding.com
+127.0.0.1 4009997658.com
+127.0.0.1 www.4009997658.com
+
+##Softwares
+### Abbyy Software
+127.0.0.1 abbyychina.com
+127.0.0.1 www.abbyychina.com
+127.0.0.1 xia.abbyychina.com
+
+### Bartender
+127.0.0.1 bartender.cc
+127.0.0.1 www.bartender.cc
+127.0.0.1 xia.bartender.cc
+
+### Beyond Compare
+127.0.0.1 beyondcompare.cc
+127.0.0.1 www.beyondcompare.cc
+127.0.0.1 xia.beyondcompare.cc
+
+### ChemDraw
+127.0.0.1 chemdraw.com.cn
+127.0.0.1 www.chemdraw.com.cn
+127.0.0.1 xia.chemdraw.com.cn
+
+### CleanMyMac
+127.0.0.1  mycleanmymac.com
+127.0.0.1   www.mycleanmymac.com
+127.0.0.1   xia.mycleanmymac.com
+
+### Corel Draw
+127.0.0.1  coreldrawchina.com
+127.0.0.1   xia.coreldrawchina.com
+127.0.0.1   www.coreldrawchina.com
+
+### Corel VideoStudio
+127.0.0.1  huishenghuiying.com.cn
+127.0.0.1   www.huishenghuiying.com.cn
+127.0.0.1   xia.huishenghuiying.com.cn
+
+### DeepFreeze
+127.0.0.1  bingdianhuanyuan.cn
+127.0.0.1   www.bingdianhuanyuan.cn
+127.0.0.1   xia.bingdianhuanyuan.cn
+
+### EasyRecovery
+127.0.0.1   easyrecoverychina.com
+127.0.0.1  www.easyrecoverychina.com
+127.0.0.1  xia.easyrecoverychina.com
+
+### Edius
+127.0.0.1   ediuschina.com
+127.0.0.1  www.ediuschina.com
+127.0.0.1  xia.ediuschina.com
+
+### FL Studio
+127.0.0.1 flstudiochina.com
+127.0.0.1 www.flstudiochina.com
+127.0.0.1 xia.flstudiochina.com
+
+### Guitar Pro
+127.0.0.1 guitarpro.cc
+127.0.0.1 www.guitarpro.cc
+127.0.0.1 xia.guitarpro.cc
+
+### Hypersnap
+127.0.0.1 hypersnap.net
+127.0.0.1 www.hypersnap.net
+
+### IconWorkShop
+127.0.0.1 www.iconworkshop.cn
+127.0.0.1 iconworkshop.cn
+
+### iMindmap
+127.0.0.1 imindmap.cc
+127.0.0.1 www.imindmap.cc
+127.0.0.1 xia.imindmap.cc
+
+### Keyshot
+127.0.0.1 keyshot.cc
+127.0.0.1 xia.keyshot.cc
+127.0.0.1 www.keyshot.cc
+
+### Kingdee KIS
+127.0.0.1 kingdeecn.cn
+127.0.0.1 www.kingdeecn.cn
+127.0.0.1 xia.kingdeecn.cn
+
+### MathType
+127.0.0.1 mathtype.cn
+127.0.0.1 www.mathtype.cn
+127.0.0.1 xia.mathtype.cn
+
+### Microsoft 365
+127.0.0.1 officesoftcn.com
+127.0.0.1 www.officesoftcn.com
+
+### MindManager
+127.0.0.1 mindmanager.cc
+127.0.0.1 www.mindmanager.cc
+127.0.0.1 xia.mindmanager.cc
+
+### NetSarang Xshell
+127.0.0.1 xshellcn.com
+127.0.0.1 www.xshellcn.com
+127.0.0.1 xia.xshellcn.com
+
+### NTFS For Mac
+127.0.0.1 ntfsformac.cn
+127.0.0.1 www.ntfsformac.cn
+127.0.0.1 xia.ntfsformac.cn
+127.0.0.1 xiazai.ntfsformac.cn
+127.0.0.1 ntfsformac.cc
+127.0.0.1 www.ntfsformac.cc
+127.0.0.1 xia.ntfsformac.cc
+127.0.0.1 xiazai.ntfsformac.cc
+
+### PDF Expert
+127.0.0.1 pdfexpert.cc
+127.0.0.1 www.pdfexpert.cc
+127.0.0.1 xiazai.pdfexpert.cc
+127.0.0.1 www.xiazai.pdfexpert.cc
+
+### SketchPad
+127.0.0.1 jihehuaban.com.cn
+127.0.0.1 www.jihehuaban.com.cn
+127.0.0.1 xia.jihehuaban.com.cn
+
+### Sothink Logo Maker
+127.0.0.1   logoshejishi.com
+127.0.0.1   www.logoshejishi.com
+127.0.0.1   xia.logoshejishi.com
+
+### Sothink SWF Decompiler
+127.0.0.1   shankejingling.com
+127.0.0.1   www.shankejingling.com
+127.0.0.1   xia.shankejingling.com
+127.0.0.1   xiazai.shankejingling.com
+
+### TeamViewer
+127.0.0.1 yuanchengxiezuo.com
+127.0.0.1 www.yuanchengxiezuo.com
+
+### Ultraiso
+127.0.0.1 cn.ultraiso.net
+127.0.0.1 ultraiso.net
+
+### Vegas
+127.0.0.1 vegaschina.cn
+127.0.0.1 www.vegaschina.cn
+127.0.0.1 xia.vegaschina.cn
+
+### XMind
+127.0.0.1 xmindchina.cn
+127.0.0.1 www.xmindchina.cn
+127.0.0.1 xia.xmindchina.cn
+127.0.0.1 xmindchina.net
+127.0.0.1 www.xmindchina.net
+127.0.0.1 xia.xmindchina.net
+
+### Zheng Zhao Zhi Xing (证照之星)
+127.0.0.1 zhzzx.com
+127.0.0.1 www.zhzzx.com
+
+###
+127.0.0.1 yihuifu.cn
+
+###
+127.0.0.1 parallelsdesktop.cn
+127.0.0.1 www.parallelsdesktop.cn
+127.0.0.1 xia.parallelsdesktop.cn
+
+
+127.0.0.1 www.luping.net.cn
+127.0.0.1 luping.net.cn
+127.0.0.1 www.alienskins.cn
+127.0.0.1 he.firefoxcn.net
+127.0.0.1 bingdianhuanyuan.cn
+127.0.0.1 www.bingdianhuanyuan.cn
+127.0.0.1 xia.bingdianhuanyuan.cn
+
+127.0.0.1 219.135.97.244
+
+
+
+
+
+
+# 迅雷敏感资源屏蔽
+127.0.0.1 hub5btmain.sandai.net
+127.0.0.1 hub5emu.sandai.net
+127.0.0.1 upgrade.xl9.xunlei.com
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+gimp.org/downloads/
+
+
+#wget -c https://download.gimp.org/mirror/pub/gimp/v2.10/windows/gimp-2.10.30-setup.exe
+#wget -c https://download.gimp.org/mirror/pub/gimp/v2.10/gimp-2.10.30.tar.bz2
+#wget -c https://download.gimp.org/mirror/pub/gimp/help/windows/2.10/gimp-help-2.10.0-zh_CN-setup.exe
+
+
+
+
+http://mirror.nju.edu.cn/gimp/gimp/
+
+
+
+
+
+
+
+
+
+
+
+
+

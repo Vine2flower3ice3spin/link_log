@@ -1,0 +1,28 @@
+#anti
+sudo add-apt-repository ppa:openshot.developers/ppa
+sudo apt-get update
+sudo apt-get install openshot-qt
+
+
+#OpenShot: Stable PPA - Official Releases 
+sudo add-apt-repository ppa:openshot.developers/ppa
+sudo apt-get update
+
+deb http://ppa.launchpad.net/openshot.developers/ppa/ubuntu bionic main 
+ deb-src http://ppa.launchpad.net/openshot.developers/ppa/ubuntu bionic main 
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FBA0C227099A5360635E3D9152165BD6B9BA26FA
+
+
+
+#Stable PPA (Contains only official releases)
+
+sudo add-apt-repository ppa:openshot.developers/ppa
+sudo apt-get update
+sudo apt-get install openshot-qt 
+
+#Daily PPA (Highly experimental and unstable, but contains daily updates for testers)
+
+sudo add-apt-repository ppa:openshot.developers/libopenshot-daily
+sudo apt-get update
+sudo apt-get install openshot-qt 

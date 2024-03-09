@@ -1,0 +1,35 @@
+tracert
+traceroute
+traceroute6
+
+
+web.archive.org 
+web.archive.org 
+
+
+
+
+
+
+#117.50.11.11
+##web.archive.org 2001::8079:f36a
+##web.archive.org 108.160.169.175
+#
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 
+#web.archive.org 

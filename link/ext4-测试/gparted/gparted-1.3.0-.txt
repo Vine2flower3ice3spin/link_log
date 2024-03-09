@@ -1,0 +1,10 @@
+
+### ?? ###
+#sudo mkdir /home/rficespin/mirrors/gparted/
+#sudo chmod 777 /home/rficespin/mirrors/gparted/
+sudo ./gparted
+
+
+
+#sudo cp /media/ubuntu/4k/Linux/sources-1804livecd-1.list /etc/apt/sources.list
+#sudo apt install libgtkmm-3.0-1v5 libgtkmm-3.0-dev 

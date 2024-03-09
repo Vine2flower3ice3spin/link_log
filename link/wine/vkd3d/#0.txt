@@ -1,0 +1,52 @@
+
+http://wiki.winehq.org/Vkd3d
+http://dl.winehq.org/vkd3d/source/
+
+
+http://github.com/HansKristian-Work/vkd3d-proton/releases
+
+
+git clone http://gitlab.winehq.org/wine/vkd3d.git
+
+
+
+./autogen.sh
+./configure
+make
+
+
+#x86_32
+../vkd3d/configure --build=i686-pc-linux-gnu "CPPFLAGS=-m32" "LDFLAGS=-m32"
+
+
+
+
+
+
+
+
+
+#Building a MinGW WoW64 Wine with a custom vkd3d build
+#If you want your Wine build to use a custom vkd3d build and make it compatible with a wider range of applications, check Building a MinGW WoW64 Wine with a custom vkd3d build. (http://wiki.winehq.org/Building_a_MinGW_WoW64_Wine_with_a_custom_vkd3d_build)
+
+#Building Wine with Direct3D 12 support
+#Wine uses pkg-config to find vkd3d libraries. If vkd3d libraries are installed system-wide, the Wine configure script should find the vkd3d libraries automatically. You can also use PKG_CONFIG_PATH, VKD3D_CFLAGS or VKD3D_LIBS to override pkg-config search path, C compiler flags for libvkd3d, or linker flags for libvkd3d, e.g.
+../wine-git/configure PKG_CONFIG_PATH=$HOME/src/vulkan/install/lib/pkgconfig
+
+
+#Debug output
+#Vkd3d provides VKD3D_DEBUG and VKD3D_SHADER_DEBUG environment variables to control debug log messages. The debug variables can be set to one of the following debug log levels: none, err, fixme, warn, trace.
+#See the README (http://gitlab.winehq.org/wine/vkd3d/-/raw/master/README) file for description of all debug environment variables.
+
+
+
+#Vulkan validation layers
+#Enable validation layers in a standard way:
+export VK_INSTANCE_LAYERS=VK_LAYER_KHRONOS_validation
+#You may also want to enable Vulkan debug extensions in vkd3d:
+VKD3D_CONFIG=vk_debug
+
+
+
+
+

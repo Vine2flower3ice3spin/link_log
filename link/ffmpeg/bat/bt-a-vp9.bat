@@ -1,0 +1,1 @@
+.\ffmpeg -hwaccel vulkan -hwaccel_device 0 -i "D:\Users\13986.DESKTOP-TQAECUD\Downloads\ys.mihoyo.com\《原神》八重神子角色PV——「狐之所爱」.mp4" -c:v vp9 -crf 0 -b:v 0 -acodec copy A:\FFmpeg\《原神》八重神子角色PV——「狐之所爱」-libvpx-vp9_1.mkv

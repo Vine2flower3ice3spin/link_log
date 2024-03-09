@@ -1,0 +1,31 @@
+
+
+http://github.com/nihui/rife-ncnn-vulkan
+
+
+
+
+./rife-ncnn-vulkan -0 0.jpg -1 1.jpg -o 01.jpg
+./rife-ncnn-vulkan -i input_frames/ -o output_frames/
+#下面的示例同时在 CPU、独立 GPU 和集成 GPU 上运行。
+#使用 2 个线程进行图像解码，4 个线程用于一个 CPU 工作线程，4 个线程用于另一个 CPU 工作线程，2 个线程用于离散 GPU，1 个线程用于集成 GPU，4 个线程用于图像编码。
+./rife-ncnn-vulkan -i input_frames/ -o output_frames/ -g -1,-1,0,1 -j 2:4,4,2,1:4
+
+
+
+
+
+#dnf install vulkan-headers vulkan-loader-devel
+sudo apt-get install libvulkan-dev
+#pacman -S vulkan-headers vulkan-icd-loader
+
+
+git clone http://github.com/nihui/rife-ncnn-vulkan.git
+cd rife-ncnn-vulkan
+git submodule update --init --recursive
+
+mkdir build && cd build
+cmake ../src
+cmake --build . -j 4
+
+

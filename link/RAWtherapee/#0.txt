@@ -1,0 +1,17 @@
+
+http://rawtherapee.com/
+
+
+#wget -c http://rawtherapee.com/shared/builds/linux/RawTherapee_5.8.AppImage
+#wget -c http://rawtherapee.com/shared/builds/windows/RawTherapee_5.8.exe
+#wget -c http://rawtherapee.com/shared/source/rawtherapee-5.8.tar.xz
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+
+Device name is not provided.
+You can pass devicename[,opt1=val1[,opt2=val2...]] as an argument.
+
+Auto-detected sources for alsa:
+  null [Discard all samples (playback) or generate zero samples (capture)] (none)
+  lavrate [Rate Converter Plugin Using Libav/FFmpeg Library] (none)
+  samplerate [Rate Converter Plugin Using Samplerate Library] (none)
+  speexrate [Rate Converter Plugin Using Speex Resampler] (none)
+  jack [JACK Audio Connection Kit] (none)
+  oss [Open Sound System] (none)
+  pipewire [PipeWire Sound Server] (none)
+  pulse [PulseAudio Sound Server] (none)
+  speex [Plugin using Speex DSP (resample, agc, denoise, echo, dereverb)] (none)
+  upmix [Plugin for channel upmix (4,6,8)] (none)
+  vdownmix [Plugin for channel downmix (stereo) with a simple spacialization] (none)
+* default [Default ALSA Output (currently PipeWire Media Server)] (none)
+  hw:CARD=Intel,DEV=0 [Direct hardware device without any conversions] (none)
+  hw:CARD=Intel,DEV=2 [Direct hardware device without any conversions] (none)
+  plughw:CARD=Intel,DEV=0 [Hardware device with all software conversions] (none)
+  plughw:CARD=Intel,DEV=2 [Hardware device with all software conversions] (none)
+  sysdefault:CARD=Intel [Default Audio Device] (none)
+  front:CARD=Intel,DEV=0 [Front output / input] (none)
+  dsnoop:CARD=Intel,DEV=0 [Direct sample snooping device] (none)
+  dsnoop:CARD=Intel,DEV=2 [Direct sample snooping device] (none)
+  usbstream:CARD=Intel [USB Stream Output] (none)
+Auto-detected sources for jack:
+Cannot list sources: Function not implemented
+Auto-detected sources for openal:
+Cannot list sources: Function not implemented
+Auto-detected sources for oss:
+Cannot list sources: Function not implemented
+Auto-detected sources for pulse:
+* alsa_output.pci-0000_00_1b.0.analog-stereo.monitor [Monitor of 内置音频 模拟立体声] (none)
+Auto-detected sources for libcdio:
+Cannot list sources: Function not implemented
+Auto-detected sources for fbdev:
+* /dev/fb0 [i915drmfb] (none)
+Auto-detected sources for iec61883:
+Cannot list sources: Function not implemented
+Auto-detected sources for kmsgrab:
+Cannot list sources: Function not implemented
+Auto-detected sources for lavfi:
+Cannot list sources: Function not implemented
+Auto-detected sources for video4linux2,v4l2:
+Auto-detected sources for x11grab:
+Cannot list sources: Function not implemented
+Auto-detected sources for libdc1394:
+Cannot list sources: Function not implemented

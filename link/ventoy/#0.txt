@@ -1,0 +1,11 @@
+
+wget -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.94/ventoy-1.0.94-linux.tar.gz"
+wget -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.94/ventoy-1.0.94-windows.zip"
+
+wget -c "http://github.com/ventoy/Ventoy/releases/download/v1.0.94/ventoy-1.0.94-livecd.iso"
+
+sudo ./Ventoy2Disk.sh --help
+sudo ./Ventoy2Disk.sh -u /dev/sdd
+
+sudo ./Ventoy2Disk.sh -i -n /dev/sdd
+

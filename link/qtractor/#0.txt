@@ -1,0 +1,21 @@
+
+http://www.qtractor.org/qtractor-downloads.html#Downloads
+
+http://sourceforge.net/projects/qtractor/files/
+
+
+#http://download.sourceforge.net/qtractor/qtractor-0.9.29.tar.gz
+#wget -c http://download.sourceforge.net/qtractor/qtractor-0.9.26.tar.gz
+#wget -c http://jaist.dl.sourceforge.net/project/qtractor/qtractor/0.9.26/qtractor-0.9.26-69.1.x86_64.AppImage
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+
+
+https://inkscape.org/zh-hans/release/
+
+
+
+
+
+
+
+http://inkscape.org/gallery/item/34672/Inkscape-9c6d41e-x86_64.AppImage
+
+
+http://launchpad.net/~inkscape.dev/+archive/ubuntu/stable
+
+ppa:inkscape.dev/stable
+
+
+sudo add-apt-repository ppa:inkscape.dev/stable
+sudo apt update
+sudo apt install inkscape
+
+
+
+
+
+
+
+
+ 

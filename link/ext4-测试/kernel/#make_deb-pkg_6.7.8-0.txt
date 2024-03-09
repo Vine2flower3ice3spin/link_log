@@ -1,0 +1,30 @@
+
+cd /4k-bak/Linux/ext4/core/
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.8.tar.xz
+
+cp /4k-bak/Linux/ext4/core/linux-6.7.8.tar.xz /media/vrficespin/CM3D2/Linux
+cd /media/vrficespin/CM3D2/Linux
+tar -xvf linux-6.7.8.tar.xz
+cd linux-6.7.8
+
+cp /4k-bak/Linux/ext4/core/.config-6.7.8-0 /media/vrficespin/CM3D2/Linux/linux-6.7.8/.config
+make LLVM=-18 oldconfig
+./scripts/config --disable DEBUG_INFO
+make LLVM=-18 menuconfig
+
+make LLVM=-18 -j4
+
+
+git config --global --add safe.directory /media/vrficespin/CM3D2/Linux/linux-6.7.8
+git init
+git add .
+git commit -m "6.7.8-1"
+
+make LLVM=-18 deb-pkg -j4
+
+
+
+
+
+
+
