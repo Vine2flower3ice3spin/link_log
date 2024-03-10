@@ -1,0 +1,4 @@
+alsa                    fbdev                   sdl2
+audiotoolbox            opengl                  sndio
+caca                    oss                     v4l2
+decklink                pulse                   xv

@@ -1,27 +1,22 @@
-ffplay -help > ./ffplay-help/ffplay-help
-ffplay -version > ./ffplay-help/ffplay-version
-ffplay -buildconf > ./ffplay-help/ffplay-buildconf
-ffplay -formats > ./ffplay-help/ffplay-formats
-ffplay -muxers > ./ffplay-help/ffplay-muxers
-ffplay -demuxers > ./ffplay-help/ffplay-demuxers
-ffplay -devices > ./ffplay-help/ffplay-devices
-ffplay -codecs > ./ffplay-help/ffplay-codecs
-ffplay -decoders > ./ffplay-help/ffplay-decoders
-ffplay -encoders > ./ffplay-help/ffplay-encoders
-ffplay -bsfs > ./ffplay-help/ffplay-bsfs
-ffplay -protocols > ./ffplay-help/ffplay-protocols
-ffplay -filters > ./ffplay-help/ffplay-filters
-ffplay -pix_fmts > ./ffplay-help/ffplay-pix_fmts
-ffplay -layouts > ./ffplay-help/ffplay-layouts
-ffplay -sample_fmts > ./ffplay-help/ffplay-sample_fmts
-ffplay -dispositions > ./ffplay-help/ffplay-dispositions
-ffplay -colors > ./ffplay-help/ffplay-colors
+ffplay -help > ./ffplay-help_/ffplay-help
+ffplay -version > ./ffplay-help_/ffplay-version
+ffplay -buildconf > ./ffplay-help_/ffplay-buildconf
+ffplay -formats > ./ffplay-help_/ffplay-formats
+ffplay -muxers > ./ffplay-help_/ffplay-muxers
+ffplay -demuxers > ./ffplay-help_/ffplay-demuxers
+ffplay -devices > ./ffplay-help_/ffplay-devices
+ffplay -codecs > ./ffplay-help_/ffplay-codecs
+ffplay -decoders > ./ffplay-help_/ffplay-decoders
+ffplay -encoders > ./ffplay-help_/ffplay-encoders
+ffplay -bsfs > ./ffplay-help_/ffplay-bsfs
+ffplay -protocols > ./ffplay-help_/ffplay-protocols
+ffplay -filters > ./ffplay-help_/ffplay-filters
+ffplay -pix_fmts > ./ffplay-help_/ffplay-pix_fmts
+ffplay -layouts > ./ffplay-help_/ffplay-layouts
+ffplay -sample_fmts > ./ffplay-help_/ffplay-sample_fmts
+ffplay -dispositions > ./ffplay-help_/ffplay-dispositions
+ffplay -colors > ./ffplay-help_/ffplay-colors
 
-
-#ffplay -sources > ./ffplay-help/ffplay-sources
-#ffplay -sinks > ./ffplay-help/ffplay-sinks
-#ffplay -hwaccels > ./ffplay-help/ffplay-hwaccels
-
-
-
-
+#ffplay -sources > ./ffplay-help_/ffplay-sources
+#ffplay -sinks > ./ffplay-help_/ffplay-sinks
+#ffplay -hwaccels > ./ffplay-help_/ffplay-hwaccels

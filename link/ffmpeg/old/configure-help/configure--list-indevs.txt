@@ -1,0 +1,7 @@
+alsa                    gdigrab                 openal
+android_camera          iec61883                oss
+avfoundation            jack                    pulse
+bktr                    kmsgrab                 sndio
+decklink                lavfi                   v4l2
+dshow                   libcdio                 vfwcap
+fbdev                   libdc1394               xcbgrab

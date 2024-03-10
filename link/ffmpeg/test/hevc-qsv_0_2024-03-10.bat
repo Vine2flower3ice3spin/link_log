@@ -1,0 +1,1 @@
+ffmpeg -hwaccel vulkan -hwaccel_device 0 -i "f:\Video\cv\配音直播 - 神游八方 - 哔哩哔哩直播，二次元弹幕直播平台.flv" -c:v hevc_qsv -b:v 10000K -acodec copy .\配音直播-神游八方_2020-09-01_hevc-qsv.mkv

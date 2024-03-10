@@ -1,0 +1,24 @@
+
+Device name is not provided.
+You can pass devicename[,opt1=val1[,opt2=val2...]] as an argument.
+
+Auto-detected sources for openal:
+Cannot list sources: Function not implemented
+Auto-detected sources for dshow:
+  @device_pnp_\\?\root#image#0001#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global [Animaze Virtual Camera] (video)
+  @device_pnp_\\?\usb#vid_534d&pid_2109&mi_00#6&2e2e46b0&2&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global [USB Video] (video)
+  @device_pnp_\\?\root#image#0004#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global [Animaze Virtual Camera] (video)
+  @device_pnp_\\?\root#image#0003#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global [Animaze Virtual Camera] (video)
+  @device_pnp_\\?\usb#vid_1bcf&pid_28c0&mi_00#6&249580a0&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global [Integrated Webcam] (video)
+  @device_pnp_\\?\root#image#0002#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global [Animaze Virtual Camera] (video)
+  @device_sw_{860BB310-5D01-11D0-BD3B-00A0C911CE86}\{A3FCE0F5-3493-419F-958A-ABA1250EC20B} [OBS Virtual Camera] (video)
+  @device_sw_{860BB310-5D01-11D0-BD3B-00A0C911CE86}\{E9CDD398-97DE-43D5-B2F5-6B01DF7AAC38} [3tene Screen Capture] (video)
+  @device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{7912892E-3900-40EE-BA83-8E62FC067E61} [数字音频接口 (2- USB Digital Audio)] (audio)
+  @device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{3809C16C-0166-4546-B74E-86D17CF9868D} [麦克风 (Steam Streaming Microphone)] (audio)
+  @device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{6D3DF693-3F3E-42A5-B2EB-181561F8B264} [麦克风 (Realtek Audio)] (audio)
+Auto-detected sources for gdigrab:
+Cannot list sources: Function not implemented
+Auto-detected sources for lavfi:
+Cannot list sources: Function not implemented
+Auto-detected sources for vfwcap:
+Cannot list sources: Function not implemented

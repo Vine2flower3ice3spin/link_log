@@ -1,0 +1,6 @@
+
+Device name is not provided.
+You can pass devicename[,opt1=val1[,opt2=val2...]] as an argument.
+
+Auto-detected sinks for sdl,sdl2:
+Cannot list sinks: Function not implemented

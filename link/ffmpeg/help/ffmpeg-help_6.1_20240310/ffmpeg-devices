@@ -1,0 +1,10 @@
+Devices:
+ D. = Demuxing supported
+ .E = Muxing supported
+ --
+ D  dshow           DirectShow capture
+ D  gdigrab         GDI API Windows frame grabber
+ D  lavfi           Libavfilter virtual input device
+ D  openal          OpenAL audio capture device
+  E sdl,sdl2        SDL2 output device
+ D  vfwcap          VfW video capture
