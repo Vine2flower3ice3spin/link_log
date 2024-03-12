@@ -20,3 +20,4 @@ ffmpeg -sinks > ./ffmpeg-help_/ffmpeg-sinks
 ffmpeg -hwaccels > ./ffmpeg-help_/ffmpeg-hwaccels
 ffmpeg -version > ./ffmpeg-help_/ffmpeg-version
 
+ffmpeg -help full > ./ffmpeg-help_/ffmpeg-help_full

@@ -1,4 +1,4 @@
-ffmpeg -help > .\ffmpeg-help_\ffmpeg-help_
+ffmpeg -help > .\ffmpeg-help_\ffmpeg-help
 ffmpeg -bsfs > .\ffmpeg-help_\ffmpeg-bsfs
 ffmpeg -buildconf > .\ffmpeg-help_\ffmpeg-buildconf
 ffmpeg -formats > .\ffmpeg-help_\ffmpeg-formats
@@ -20,3 +20,4 @@ ffmpeg -sinks > .\ffmpeg-help_\ffmpeg-sinks
 ffmpeg -hwaccels > .\ffmpeg-help_\ffmpeg-hwaccels
 ffmpeg -version > .\ffmpeg-help_\ffmpeg-version
 
+ffmpeg -help full > .\ffmpeg-help_\ffmpeg-help_full

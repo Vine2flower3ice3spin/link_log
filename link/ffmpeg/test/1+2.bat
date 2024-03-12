@@ -1,0 +1,1 @@
+ffmpeg -f concat -safe 0 -i 1+2.txt -c copy A:\配音直播-神游八方_2020-09-01_hevc-qsv.mkv

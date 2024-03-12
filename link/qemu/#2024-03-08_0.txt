@@ -9,6 +9,8 @@ cd qemu-8.2.2/
 #./configure 
 make -j3
 
+make check
+make clean
 
 #old_2022
 ./configure --target-list=loongarch64-softmmu,loongarch64-linux-user --enable-kvm --enable-vnc --enable-guest-agent --enable-libusb --enable-usb-redir 
