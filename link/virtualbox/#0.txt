@@ -17,6 +17,7 @@ http://download.virtualbox.org/virtualbox
 
 VBoxManage modifyhd --compact debug-disk-0.vdi
 
+"e:\Program Files\Oracle\VirtualBox\VBoxManage.exe" modifyhd --compact "F:\VM\aaaa.vdi"
 
 
 

@@ -1,0 +1,191 @@
+$ make help
+changing dir to build for make "help"...
+make[1]: 进入目录“/media/rficespin/ciotfos/Linux/qemu-9.0.1/build”
+Generic targets:
+  all				- Build all
+  dir/file.o			- Build specified target only
+  install			- Install QEMU
+  ctags/gtags/TAGS		- Generate tags file for editors
+  cscope			- Generate cscope index
+  sparse			- Run sparse on the QEMU source
+
+Plugin targets:
+  plugins			- Build the example TCG plugins
+
+Cleaning targets:
+  clean				- Remove most generated files but keep the config
+  distclean			- Remove all generated files
+  dist				- Build a distributable tarball
+
+Linux-user targets:
+  update-linux-vdso		- Build linux-user vdso images
+
+Test targets:
+  check				- Run all tests (check-help for details)
+  bench				- Run all benchmarks
+  lcitool-help			- Help about targets for managing build environment manifests
+  docker-help			- Help about targets running tests inside containers
+  vm-help			- Help about targets running tests inside VM
+
+Documentation targets:
+  html man			- Build documentation in specified format
+
+  make [targets]		- (quiet build, default)
+  make V=1 [targets]		- (verbose build)
+make[1]: 离开目录“/media/rficespin/ciotfos/Linux/qemu-9.0.1/build”
+
+
+
+
+
+
+
+$sudo make install
+changing dir to build for make "install"...
+make[1]: 进入目录“/media/rficespin/ciotfos/Linux/qemu-9.0.1/build”
+[1/27] Generating qemu-version.h with a custom command (wrapped by meson to capture output)
+[2/3] Generating subprojects/dtc/version_gen.h with a custom command
+[2/3] Installing files.
+Installing subprojects/dtc/libfdt/libfdt.a to /opt/qemu-9.0.1-la/lib/x86_64-linux-gnu
+Installing trace/trace-events-all to /opt/qemu-9.0.1-la/share/qemu
+Installing qemu-system-loongarch64 to /opt/qemu-9.0.1-la/bin
+Installing qemu-loongarch64 to /opt/qemu-9.0.1-la/bin
+Installing qemu-system-x86_64 to /opt/qemu-9.0.1-la/bin
+Installing qemu-x86_64 to /opt/qemu-9.0.1-la/bin
+Installing qemu-system-i386 to /opt/qemu-9.0.1-la/bin
+Installing qemu-i386 to /opt/qemu-9.0.1-la/bin
+Installing qga/qemu-ga to /opt/qemu-9.0.1-la/bin
+Installing qemu-keymap to /opt/qemu-9.0.1-la/bin
+Installing qemu-img to /opt/qemu-9.0.1-la/bin
+Installing qemu-io to /opt/qemu-9.0.1-la/bin
+Installing qemu-nbd to /opt/qemu-9.0.1-la/bin
+Installing storage-daemon/qemu-storage-daemon to /opt/qemu-9.0.1-la/bin
+Installing qemu-edid to /opt/qemu-9.0.1-la/bin
+Installing qemu-bridge-helper to /opt/qemu-9.0.1-la/libexec
+Installing qemu-pr-helper to /opt/qemu-9.0.1-la/bin
+Installing pc-bios/edk2-aarch64-code.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/edk2-arm-code.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/edk2-arm-vars.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/edk2-i386-code.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/edk2-i386-secure-code.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/edk2-i386-vars.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/edk2-x86_64-code.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/edk2-x86_64-secure-code.fd to /opt/qemu-9.0.1-la/share/qemu
+Installing pc-bios/keymaps/ar to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/bepo to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/cz to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/da to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/de to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/de-ch to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/en-gb to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/en-us to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/es to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/et to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/fi to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/fo to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/fr to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/fr-be to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/fr-ca to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/fr-ch to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/hr to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/hu to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/is to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/it to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/ja to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/lt to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/lv to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/mk to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/nl to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/no to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/pl to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/pt to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/pt-br to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/ru to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/th to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing pc-bios/keymaps/tr to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/subprojects/dtc/libfdt/fdt.h to /opt/qemu-9.0.1-la/include/
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/subprojects/dtc/libfdt/libfdt.h to /opt/qemu-9.0.1-la/include/
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/subprojects/dtc/libfdt/libfdt_env.h to /opt/qemu-9.0.1-la/include/
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/include/qemu/qemu-plugin.h to /opt/qemu-9.0.1-la/include/
+Installing new directory /opt/qemu-9.0.1-la/var/run
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/build/meson-private/libfdt.pc to /opt/qemu-9.0.1-la/lib/x86_64-linux-gnu/pkgconfig
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_16x16.png to /opt/qemu-9.0.1-la/share/icons/hicolor/16x16/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_24x24.png to /opt/qemu-9.0.1-la/share/icons/hicolor/24x24/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_32x32.png to /opt/qemu-9.0.1-la/share/icons/hicolor/32x32/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_48x48.png to /opt/qemu-9.0.1-la/share/icons/hicolor/48x48/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_64x64.png to /opt/qemu-9.0.1-la/share/icons/hicolor/64x64/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_128x128.png to /opt/qemu-9.0.1-la/share/icons/hicolor/128x128/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_256x256.png to /opt/qemu-9.0.1-la/share/icons/hicolor/256x256/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_512x512.png to /opt/qemu-9.0.1-la/share/icons/hicolor/512x512/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu_32x32.bmp to /opt/qemu-9.0.1-la/share/icons/hicolor/32x32/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/icons/qemu.svg to /opt/qemu-9.0.1-la/share/icons/hicolor/scalable/apps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/ui/qemu.desktop to /opt/qemu-9.0.1-la/share/applications
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/bios.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/bios-256k.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/bios-microvm.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/qboot.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-cirrus.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-stdvga.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-vmware.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-qxl.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-virtio.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-ramfb.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-bochs-display.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vgabios-ati.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/openbios-sparc32 to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/openbios-sparc64 to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/openbios-ppc to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/QEMU,tcx.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/QEMU,cgthree.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/pxe-e1000.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/pxe-eepro100.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/pxe-ne2k_pci.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/pxe-pcnet.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/pxe-rtl8139.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/pxe-virtio.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-e1000.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-eepro100.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-ne2k_pci.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-pcnet.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-rtl8139.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-virtio.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-e1000e.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/efi-vmxnet3.rom to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/qemu-nsis.bmp to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/multiboot.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/multiboot_dma.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/linuxboot.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/linuxboot_dma.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/kvmvapic.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/pvh.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/s390-ccw.img to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/s390-netboot.img to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/slof.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/skiboot.lid to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/palcode-clipper to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/u-boot.e500 to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/u-boot-sam460-20100605.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/qemu_vga.ndrv to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/edk2-licenses.txt to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/hppa-firmware.img to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/hppa-firmware64.img to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/opensbi-riscv32-generic-fw_dynamic.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/opensbi-riscv64-generic-fw_dynamic.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/npcm7xx_bootrom.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vof.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/vof-nvram.bin to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/bamboo.dtb to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/canyonlands.dtb to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/petalogix-s3adsp1800.dtb to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/petalogix-ml605.dtb to /opt/qemu-9.0.1-la/share/qemu
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/build/pc-bios/descriptors/50-edk2-i386-secure.json to /opt/qemu-9.0.1-la/share/qemu/firmware
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/build/pc-bios/descriptors/50-edk2-x86_64-secure.json to /opt/qemu-9.0.1-la/share/qemu/firmware
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/build/pc-bios/descriptors/60-edk2-aarch64.json to /opt/qemu-9.0.1-la/share/qemu/firmware
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/build/pc-bios/descriptors/60-edk2-arm.json to /opt/qemu-9.0.1-la/share/qemu/firmware
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/build/pc-bios/descriptors/60-edk2-i386.json to /opt/qemu-9.0.1-la/share/qemu/firmware
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/build/pc-bios/descriptors/60-edk2-x86_64.json to /opt/qemu-9.0.1-la/share/qemu/firmware
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/keymaps/sl to /opt/qemu-9.0.1-la/share/qemu/keymaps
+Installing /media/rficespin/ciotfos/Linux/qemu-9.0.1/pc-bios/keymaps/sv to /opt/qemu-9.0.1-la/share/qemu/keymaps
+make[1]: 离开目录“/media/rficespin/ciotfos/Linux/qemu-9.0.1/build”
+rficespin@rficespin-vostro143468:/media/rficespin/ciotfos/Linux/qemu-9.0.1$

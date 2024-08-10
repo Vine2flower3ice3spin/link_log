@@ -5,3 +5,5 @@ ffmpeg -hwaccel vulkan -hwaccel_device 1 -i "f:\Video\cv\配音直播 - 神游�
 ffmpeg -hwaccel vulkan -hwaccel_device 1 -i "f:\Video\cv\配音直播 - 神游八方 - 哔哩哔哩直播，二次元弹幕直播平台_5.flv" -c:v hevc_qsv -load_plugin hevc_hw -b:v 2000K -bufsize 6000K -rc vbr_hq -rc-lookahead 1000 -pix_fmt p010le -preset veryslow -tier high -global_quality 18 -2pass 1 -acodec copy .\配音直播-神游八方_2020-09-01_hevc-qsv_5.mkv
 rem -qp 18 230MB      -global_quality 18  144MB
 rem -threads 
+
+rem ffmpeg -hwaccel vulkan -hwaccel_device 1 -i Y:\V\c\v\.mp4 -c:v hevc_qsv -load_plugin hevc_hw -b:v 15000K -bufsize 30000K -rc vbr_hq -rc-lookahead 1000 -pix_fmt p010le -preset veryslow -tier high -global_quality 18 -2pass 1 -acodec copy Y:\V\c\v_hevc.mkv
