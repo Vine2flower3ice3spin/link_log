@@ -2,8 +2,10 @@
 https://gitforwindows.org/
 
 
-https://desktop.github.com/
+#https://desktop.github.com/
+https://github.com/apps/desktop
 
+https://github.com/git-for-windows/git/releases/
 
 
 

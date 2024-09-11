@@ -1,0 +1,8 @@
+
+https://github.com/lucasg/Dependencies
+
+cd /D A:\exe\？？\Dependencies\1.11.1\Dependencies_x64_Release
+Dependencies.exe -modules A:\AMD\Ninja_Ripper_2.0.5_beta-portable\bin64\csrss.exe > ..\aaaa.txt
+
+
+
