@@ -1,0 +1,15 @@
+
+https://github.com/maharmstone/btrfs/releases
+
+
+# Install 安装
+
+# 要安装驱动程序，请下载并解压缩最新版本，右键单击 btrfs.inf，然后选择 Install （安装）。驱动程序已签名，因此应该可以在现代版本的 Windows 上开箱即用。
+##需要将安装文件放在本地才能安装，如果把文件放在smb共享的网络存储中则会提示 “安装错误”“系统找不到指定的路径。”
+
+# 如果您使用的是 Windows 10 并启用了安全启动，则可能必须更改注册表才能加载驱动程序 - 请参阅下文（https://github.com/maharmstone/btrfs#secureboot）。
+
+
+
+#2024-09-24
+一个debian的/分区被挂载在 S: ，于是顺便用反病毒软件/杀毒软件扫一扫，但不知道为什么会蓝屏，花了一天时间排查，终于把问题范围缩小到  S:\usr\share\man\man7 中，又是一顿排查，终于确定问题出在大小写不同的 pam.7.gz 和 PAM.7.gz 上，只要扫描时不碰这两个就不会蓝屏。
