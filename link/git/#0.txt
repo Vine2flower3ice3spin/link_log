@@ -1,11 +1,13 @@
 
 https://gitforwindows.org/
 
+https://github.com/git-for-windows/git/releases/
+https://github.com/git-lfs/git-lfs/releases/
+
 
 #https://desktop.github.com/
 https://github.com/apps/desktop
 
-https://github.com/git-for-windows/git/releases/
 
 
 

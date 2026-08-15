@@ -4,6 +4,17 @@ http://pkg.loongnix.cn/loongnix/pool/main/i/i386-runtime-base/
 http://pkg.loongnix.cn/loongnix/pool/main/i/i386-runtime-extra/
 
 
+https://mirrors.bfsu.edu.cn/anthon/debs/pool/spiral-preview/main/l/
+
+
+
+
+#测试	预览版
+https://github.com/deuso/latx-build/releases
+
+
+#lat开源版
+https://github.com/lat-opensource/lat
 
 
 
@@ -12,9 +23,3 @@ http://pkg.loongnix.cn/loongnix/pool/main/i/i386-runtime-extra/
 
 
 
-
-
-
-
-
- 

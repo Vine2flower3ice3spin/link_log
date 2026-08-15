@@ -1,0 +1,42 @@
+$ make help
+Generic targets:
+  all                            - Build all
+  dir/file.o                     - Build specified target only
+  install                        - Install QEMU
+  ctags/gtags/TAGS               - Generate tags file for editors
+  cscope                         - Generate cscope index
+  sparse                         - Run sparse on the QEMU source
+
+Cleaning targets:
+  clean                          - Remove most generated files but keep the config
+  distclean                      - Remove all generated files
+  dist                           - Build a distributable tarball
+
+Linux-user targets:
+  update-linux-vdso              - Build linux-user vdso images
+
+Test targets:
+  check                          - Run all tests (check-help for details)
+  bench                          - Run all benchmarks
+  lcitool-help                   - Help about targets for managing build environment manifests
+  docker-help                    - Help about targets running tests inside containers
+  vm-help                        - Help about targets running tests inside VM
+
+Documentation targets:
+  html man                       - Build documentation in specified format
+
+  make [targets]                 - (quiet build, default)
+  make V=1 [targets]             - (verbose build)
+
+
+
+
+
+
+
+$sudo make install
+changing dir to build for make "install"...
+make[1]: 进入目录“///ciotfos/Linux/qemu-9.1.2/build”
+[1/27] Generating qemu-version.h with a custom command (wrapped by meson to capture output)
+~~~
+rficespin@rficespin-vostro143468:///ciotfos/Linux/qemu-9.1.2$

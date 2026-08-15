@@ -13,7 +13,18 @@ make
 
 
 
-
+##2024-02
+cd /media/vrficespin/BACKUP/#333/Linux/Python/
+tar -xvf Python-3.7.17.tar.xz 
+cd Python-3.7.17/
+cat README.rst 
+./configure -help
+./configure
+sudo apt reinstall libsqlite3-dev libgdm-dev libgdbm-dev libdbm-dev libgdbm-compat-dev libsnack-alsa libsnacc-dev python3-tk tk8.6-dev 
+CC=gcc-13 ./configure 
+make -j4
+make clean
+##2024-02
 
 
 

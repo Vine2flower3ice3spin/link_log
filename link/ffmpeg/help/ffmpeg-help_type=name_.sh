@@ -1,53 +1,160 @@
-echo ffmpeg-help_decoders_
+mkdir ./ffmpeg-help_decoder_
+echo 'ffmpeg-help_decoder_'
 
-echo h264
-ffmpeg -help decoders=libopenh264 > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_libopenh264
-ffmpeg -help decoders=h264_qsv > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_h264_qsv
-
-echo hevc
-ffmpeg -help decoders=hevc_qsv > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_hevc_qsv
-
-echo av1
-ffmpeg -help decoders=libdav1d > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_libdav1d
-ffmpeg -help decoders=libaom-av1 > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_libaom-av1
-ffmpeg -help decoders=av1-qsv > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_av1-qsv
-
-echo vpx
-ffmpeg -help decoders=libvpx > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_libvpx
-ffmpeg -help decoders=vp8_qsv > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_vp8_qsv
-
-ffmpeg -help decoders=libvpx-vp9 > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_libvpx-vp9
-ffmpeg -help decoders=vp9_qsv > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_vp9_qsv
-
-echo vorbis
-ffmpeg -help decoders=libvorbis > ./ffmpeg-help_decoders_/ffmpeg-help_decoders_libvorbis
+echo 'ffmpeg-help_encoder_'
+mkdir ./ffmpeg-help_encoder_
 
 
-echo ffmpeg-help_encoder_
-echo h264
+echo 'Video 视频'
+
+echo 'h264/avc		decoder'
+ffmpeg -help decoder=h264_qsv > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_h264_qsv
+ffmpeg -help decoder=libopenh264 > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libopenh264
+ffmpeg -help decoder=h264_cuvid > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_h264_cuvid
+echo 'h264/avc		encoder'
 ffmpeg -help encoder=libx264 > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libx264
+ffmpeg -help encoder=libx264rgb > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libx264rgb
 ffmpeg -help encoder=libopenh264 > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libopenh264
+ffmpeg -help encoder=h264_amf > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_h264_amf
+ffmpeg -help encoder=h264_nvenc > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_h264_nvenc
 ffmpeg -help encoder=h264_qsv > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_h264_qsv
 ffmpeg -help encoder=h264_vaapi > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_h264_vaapi
+ffmpeg -help encoder=h264_vulkan > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_h264_vulkan
 
-echo hevc
+echo '265/hevc		decoder'
+ffmpeg -help decoder=hevc_qsv > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_hevc_qsv
+ffmpeg -help decoder=hevc_cuvid > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_hevc_cuvid
+echo 'h265/hevc		encoder'
 ffmpeg -help encoder=libx265 > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libx265
+ffmpeg -help encoder=hevc_amf > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_hevc_amf
+ffmpeg -help encoder=hevc_nvenc > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_hevc_nvenc
 ffmpeg -help encoder=hevc_qsv > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_hevc_qsv
 ffmpeg -help encoder=hevc_vaapi > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_hevc_vaapi
+ffmpeg -help encoder=hevc_vulkan > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_hevc_vulkan
+ffmpeg -help encoder=libkvazaar > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libkvazaar
 
-echo av1
+
+echo '266/vvc?		decoder'
+ffmpeg -help decoder=vvc_qsv > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_vvc_qsv
+echo '266/vvc?		encoder'
+
+
+echo 'av1		decoder'
+ffmpeg -help decoder=libdav1d > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libdav1d
+ffmpeg -help decoder=libaom-av1 > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libaom-av1
+ffmpeg -help decoder=av1_cuvid > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_av1_cuvid
+ffmpeg -help decoder=av1_qsv > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_av1_qsv
+echo 'av1		encoder'
 ffmpeg -help encoder=libaom-av1 > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libaom-av1
-ffmpeg -help encoder=av1-qsv > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_av1-qsv
+ffmpeg -help encoder=libsvtav1 > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libsvtav1
+ffmpeg -help encoder=av1_nvenc > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_av1_nvenc
+ffmpeg -help encoder=av1_qsv > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_av1_qsv
+ffmpeg -help encoder=av1_amf > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_av1_amf
 ffmpeg -help encoder=av1_vaapi > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_av1_vaapi
 
-echo vpx
+
+echo 'vpx		decoder'
+ffmpeg -help decoder=libvpx > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libvpx
+ffmpeg -help decoder=vp8_cuvid > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_vp8_cuvid
+ffmpeg -help decoder=vp8_qsv > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_vp8_qsv
+ffmpeg -help decoder=libvpx-vp9 > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libvpx-vp9
+ffmpeg -help decoder=vp9_cuvid > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_vp9_cuvid
+ffmpeg -help decoder=vp9_qsv > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_vp9_qsv
+echo 'vpx		encoder'
 ffmpeg -help encoder=libvpx > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libvpx
 ffmpeg -help encoder=vp8_vaapi > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_vp8_vaapi
-
 ffmpeg -help encoder=libvpx-vp9 > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libvpx-vp9
-ffmpeg -help encoder=vp9_qsv > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_vp9_qsv
 ffmpeg -help encoder=vp9_vaapi > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_vp9_vaapi
+ffmpeg -help encoder=vp9_qsv > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_vp9_qsv
 
-echo vorbis
+
+
+echo 'Audio  音频'
+echo 'aac		decoder'
+ffmpeg -help decoder=aac > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_aac
+ffmpeg -help decoder=aac_fixed > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_aac_fixed
+ffmpeg -help decoder=libfdk_aac > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libfdk_aac
+ffmpeg -help decoder=aac_latm > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_aac_latm
+echo 'aac		encoder'
+ffmpeg -help encoder=aac > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_aac
+ffmpeg -help encoder=libfdk_aac > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libfdk_aac
+
+echo 'flac		decoder'
+ffmpeg -help decoder=flac > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_flac
+echo 'flac		encoder'
+ffmpeg -help encoder=flac > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_flac
+
+echo 'opus		decoder'
+ffmpeg -help decoder=libopus > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libopus
+echo 'opus		encoder'
+ffmpeg -help encoder=libopus > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libopus
+
+echo 'vorbis		decoder'
+ffmpeg -help decoder=libvorbis > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libvorbis
+echo 'vorbis		encoder'
 ffmpeg -help encoder=libvorbis > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libvorbis
 
+
+
+
+
+
+echo 'P   图片'
+echo 'apng		decoder'
+ffmpeg -help decoder=apng > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_apng
+echo 'apng		encoder'
+ffmpeg -help encoder=apng > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_apng
+
+echo 'dds		decoder'
+ffmpeg -help decoder=dds > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_dds
+
+echo 'exr		decoder'
+ffmpeg -help decoder=exr > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_exr
+echo 'exr		encoder'
+ffmpeg -help encoder=exr > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_exr
+
+echo 'gif		decoder'
+ffmpeg -help decoder=gif > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_gif
+echo 'gif		encoder'
+ffmpeg -help encoder=gif > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_gif
+
+echo 'jpeg		decoder'
+ffmpeg -help decoder=jpeg2000 > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_jpeg2000
+ffmpeg -help decoder=jpegls > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_jpegls
+ffmpeg -help decoder=libjxl > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_libjxl
+echo 'jpeg		encoder'
+ffmpeg -help encoder=jpeg2000 > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_jpeg2000
+ffmpeg -help encoder=libopenjpeg > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libopenjpeg
+ffmpeg -help encoder=jpegls > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_jpegls
+ffmpeg -help encoder=libjxl > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libjxl
+
+echo 'png		encoder'
+ffmpeg -help encoder=png > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_png
+
+echo 'librsvg		decoder'
+ffmpeg -help decoder=librsvg > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_librsvg
+
+echo 'tiff		decoder'
+ffmpeg -help decoder=tiff > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_tiff
+echo 'tiff		encoder'
+ffmpeg -help encoder=tiff > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_tiff
+
+echo 'webp		decoder'
+ffmpeg -help decoder=webp > ./ffmpeg-help_decoder_/ffmpeg-help_decoder_webp
+echo 'webp		encoder'
+ffmpeg -help encoder=libwebp > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libwebp
+ffmpeg -help encoder=libwebp_anim > ./ffmpeg-help_encoder_/ffmpeg-help_encoder_libwebp_anim
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo '0'

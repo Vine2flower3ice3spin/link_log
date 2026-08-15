@@ -2,12 +2,18 @@
 http://music.163.com/#/download
 
 
+https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.9.203872_64.exe
+https://d8.music.126.net/dmusic/NeteaseCloudMusic_Music_official_3.1.9.203872_64.exe
+https://d8.music.126.net/dmusic2/NeteaseCloudMusic_Music_official_3.1.30.205130_64.exe
 
-#https://github.com/mbinary/netease-music-cracker.git
+
+# music-recover
+https://github.com/heqin-zhu/music-recover
+https://github.com/JohenanLi/netease-music-cracker
 
 
-
-
+# NeteaseCloudMusicFlac
+https://github.com/atlas-comstock/NeteaseCloudMusicFlac
 
 
 

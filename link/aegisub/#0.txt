@@ -1,6 +1,7 @@
 
 http://github.com/Aegisub/Aegisub/releases
 
+http://github.com/TypesettingTools/Aegisub/releases/tag/v3.4.2
 
 
 
@@ -14,4 +15,3 @@ http://github.com/Aegisub/Aegisub/releases
 
 
 
- 

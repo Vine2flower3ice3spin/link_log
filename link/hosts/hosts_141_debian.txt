@@ -1,9 +1,10 @@
 # Host addresses
-127.0.0.1  localhost
-127.0.1.1  vrficespin-tobefilledbyoem
-::1        localhost ip6-localhost ip6-loopback
-ff02::1    ip6-allnodes
-ff02::2    ip6-allrouters
+127.0.0.1	localhost
+127.0.1.1	vrficespin-tobefilledbyoem
+::1		localhost ip6-localhost ip6-loopback
+ff02::1		ip6-allnodes
+ff02::2		ip6-allrouters
+
 
 
 
@@ -26,6 +27,7 @@ ff02::2    ip6-allrouters
 127.0.0.1 cytcm.com
 127.0.0.1 mimiming.com
 127.0.0.1 browser-update.org
+127.0.0.1 services.vlitag.com
 
 0.0.0.0 bandicam.com
 0.0.0.0 ssl.bandicam.com
@@ -45,7 +47,30 @@ ff02::2    ip6-allrouters
 127.0.0.1 qqqqqqqq.cc
 127.0.0.1 ashurwerj.null
 
-
+##ad_广告
+127.0.0.1 s3m.mediav.com
+127.0.0.1 live-s3m.mediav.com
+127.0.0.1 s3m1.fenxi.com
+127.0.0.1 s3m2.fenxi.com
+127.0.0.1 s3m3.fenxi.com
+127.0.0.1 s3m4.fenxi.com
+127.0.0.1 s3m5.fenxi.com
+127.0.0.1 s3m6.fenxi.com
+127.0.0.1 s3m7.fenxi.com
+127.0.0.1 s3m8.fenxi.com
+127.0.0.1 s3m9.fenxi.com
+127.0.0.1 s3m1.mdvdns.com
+127.0.0.1 s3m2.mdvdns.com
+127.0.0.1 s3m3.mdvdns.com
+127.0.0.1 s3m4.mdvdns.com
+127.0.0.1 s3m5.mdvdns.com
+127.0.0.1 s3m6.mdvdns.com
+127.0.0.1 s3m7.mdvdns.com
+127.0.0.1 s3m8.mdvdns.com
+127.0.0.1 s3m9.mdvdns.com
+#127.0.0.1 tg.602.com
+127.0.0.1 jx.cdn.qhstatic.com
+##ad_广告
 
 ####302
 
@@ -66,9 +91,11 @@ fe80:: translate.google.cn
 
 127.0.0.1 youtube.com
 #172.217.27.36 google-analytics.com
-127.0.0.1 google-analytics.com
+#127.0.0.1 google-analytics.com
+58.63.233.97 google-analytics.com
 #142.250.204.110 www.google-analytics.com
-127.0.0.1 www.google-analytics.com
+#127.0.0.1 www.google-analytics.com
+58.63.233.97 google-analytics.com
 #127.0.0.1 googleapis.com
 127.0.0.1 googleapis.com
 #127.0.0.1 www.googleapis.com
@@ -128,10 +155,12 @@ fe80:: translate.google.cn
 
 ##github.com
 #13.114.40.48 github.com
-#20.27.177.113  github.com
-20.200.245.247 github.com
-#20.205.243.166  github.com
+#20.27.177.113 github.com
+#20.200.245.247 github.com
+20.205.243.166 github.com
 #140.82.112.3 github.com
+#140.82.116.3 github.com
+#140.82.116.4 github.com
 #140.82.121.3 github.com
 #140.82.121.4 github.com
 #192.30.255.112 github.com
@@ -163,6 +192,11 @@ fe80:: translate.google.cn
 #140.82.114.21 collector.github.com
 140.82.114.22 collector.github.com
 
+##codeload.github.com
+20.205.243.165 codeload.github.com
+140.82.116.10 codeload.github.com
+20.27.177.114 codeload.github.com
+
 ##gist.github.com
 #140.82.112.3 gist.github.com
 140.82.112.4 gist.github.com
@@ -181,17 +215,37 @@ fe80:: translate.google.cn
 ######github
 
 
+#fonts.gstatic.com
+#120.253.253.226 fonts.gstatic.com
+142.250.154.94 fonts.gstatic.com
+192.178.218.94 fonts.gstatic.com
+2404:6800:4005:805::2003 fonts.gstatic.com
+2a00:1450:4001:c25::5e fonts.gstatic.com
+
+
 ##wine
-146.75.114.217 dl.winehq.org
+#104.26.8.100 dl.winehq.org
+#104.26.9.100 dl.winehq.org
+#146.75.114.217 dl.winehq.org
 #151.101.2.217 dl.winehq.org
 #151.101.66.217 dl.winehq.org
 #151.101.110.217 dl.winehq.org
+#151.101.130.217 dl.winehq.org
 #151.101.194.217 dl.winehq.org
+#172.67.69.38 dl.winehq.org
+2a04:4e42::729 dl.winehq.org
+#2a04:4e42:200::729 dl.winehq.org
+#2a04:4e42:400::729 dl.winehq.org
+#2a04:4e42:600::729 dl.winehq.org
 
 ##wine
 
+
 ##腾讯
-14.18.245.237 mail.qq.com
+#14.18.245.237 mail.qq.com
+183.47.126.35 mail.qq.com
+#183.47.114.18 mail.qq.com
+#183.47.104.144 mail.qq.com
 #240e:ff:f101:10::130 mail.qq.com
 ##腾讯
 
@@ -209,6 +263,11 @@ fe80:: translate.google.cn
 #114.55.93.175 chinauos.com
 121.36.167.218 account.chinauos.com
 47.56.88.11 bbs.chinauos.com
+
+#104.21.0.217 bbs.deepin.org
+#162.159.247.79 bbs.deepin.org
+#172.67.128.81 bbs.deepin.org
+
 ##统信
 
 ##微软
@@ -229,12 +288,31 @@ fe80:: translate.google.cn
 
 ##开源
 #195.135.221.134 download.opensuse.org
+#104.20.23.46 nodejs.org	超时
+104.20.22.46 nodejs.org
+
+104.21.32.1 lutris.net
+
 ##开源
 
+##linux
+146.75.45.176 cdn.kernel.org
+151.101.1.176 cdn.kernel.org
+151.101.65.176 cdn.kernel.org
+151.101.77.176 cdn.kernel.org
+151.101.89.176 cdn.kernel.org
+151.101.129.176 cdn.kernel.org
+151.101.193.176 cdn.kernel.org
+##linux
+
+
 ##vroid
-210.140.214.71 download.vroid.com
+#210.140.214.71 download.vroid.com
 #210.140.214.74 download.vroid.com
 #210.140.214.77 download.vroid.com
+#210.140.214.82 download.vroid.com
+#210.140.214.85 download.vroid.com
+#210.140.214.88 download.vroid.com
 ##vroid
 
 ##gaming
@@ -242,18 +320,12 @@ fe80:: translate.google.cn
 #172.64.154.125 launcher.store.epicgames.com
 #2606:4700:4400::6812:2183 launcher.store.epicgames.com
 #2606:4700:4400::ac40:9a7d launcher.store.epicgames.com
-##gaming
 
-##mc
-# 127.0.0.1 www.curseforge.com
-# 127.0.0.1 www.curseforge.com
-108.139.1.13 mediafilez.forgecdn.net
-# 127.0.0.1 mediafilez.forgecdn.net
-# 13.35.166.101 configs.forgecdn.net
-13.35.166.103 configs.forgecdn.net
-# 18.66.112.74 configs.forgecdn.net
-# 127.0.0.1 configs.forgecdn.net
-##mc
+
+#104.26.8.198 itch.io
+#104.26.9.198 itch.io
+#172.67.69.99 itch.io
+##gaming
 
 ##原神私服及CBT1教程的文章
 #104.21.49.218 proxy-cdn1.yuukiz.workers.dev
@@ -262,13 +334,229 @@ fe80:: translate.google.cn
 172.67.195.13 proxy-cdn1.yuukiz.workers.dev
 ##原神私服及CBT1教程的文章
 
+####mc
+##curseforge
+#104.17.30.3 www.curseforge.com
+# 127.0.0.1 www.curseforge.com
+# 127.0.0.1 www.curseforge.com
+#104.17.30.3 mediafilez.forgecdn.net
+#108.139.1.13 mediafilez.forgecdn.net
+# 127.0.0.1 mediafilez.forgecdn.net
+# 13.35.166.101 configs.forgecdn.net
+#13.35.166.103 configs.forgecdn.net
+# 18.66.112.74 configs.forgecdn.net
+# 127.0.0.1 configs.forgecdn.net
+
+##neoforge
+#37.19.194.81 maven.neoforged.net
+#79.127.211.89 maven.neoforged.net
+ 79.127.216.204 maven.neoforged.net
+#84.17.57.26 maven.neoforged.net	（不稳定）
+#84.17.57.27 maven.neoforged.net	（不稳定）
+#156.146.44.89 maven.neoforged.net
+#156.146.44.90 maven.neoforged.net
+#195.181.172.3 maven.neoforged.net
+#195.181.172.6 maven.neoforged.net
+#195.181.175.40 maven.neoforged.net
+#195.181.170.19 maven.neoforged.net
+#212.102.56.179 maven.neoforged.net
+
+##meta.fabricmc.net
+104.21.33.240 meta.fabricmc.net
+172.67.151.177 meta.fabricmc.net
+#188.114.96.0 meta.fabricmc.net
+#188.114.97.0 meta.fabricmc.net
+
+##maven.fabricmc.net
+#104.21.33.240 maven.fabricmc.net
+#172.67.151.177 maven.fabricmc.net
+#188.114.96.2 maven.fabricmc.net
+#188.114.97.2 maven.fabricmc.net
+#188.114.96.3 maven.fabricmc.net
+#188.114.97.3 maven.fabricmc.net
+
+####mc
+
+####bilibili_b站
+##api.bilibili.com
+#14.17.92.70 api.bilibili.com
+14.17.92.71 api.bilibili.com
+#14.17.92.72 api.bilibili.com
+#14.17.92.73 api.bilibili.com
+#14.17.92.74 api.bilibili.com
+#23.236.97.62 api.bilibili.com
+#59.36.228.17 api.bilibili.com
+#59.36.228.18 api.bilibili.com
+#59.36.228.19 api.bilibili.com
+#59.36.228.20 api.bilibili.com
+#59.36.228.21 api.bilibili.com
+#240e:97d:2000:c0e::30 api.bilibili.com
+
+##api.vc.bilibili.com
+14.17.92.72 api.vc.bilibili.com
+#59.36.228.20 api.vc.bilibili.com
+
+##member.bilibili.com
+#14.17.92.70 member.bilibili.com
+14.17.92.71 member.bilibili.com
+#23.236.97.62 member.bilibili.com
+#59.36.228.17 member.bilibili.com
+
+##interface.bilibili.com
+14.17.92.71 interface.bilibili.com
+
+##data.bilibili.com
+14.17.92.28 data.bilibili.com
+
+##broadcast.chat.bilibili.com
+#58.220.18.12 broadcast.chat.bilibili.com
+58.220.18.16 broadcast.chat.bilibili.com
+#58.220.18.31 broadcast.chat.bilibili.com
+
+##passport.bilibili.com
+14.17.92.72 passport.bilibili.com
+
+##passport.biligame.com
+#36.158.213.107 passport.biligame.com
+#36.159.104.39 passport.biligame.com
+112.50.114.191 passport.biligame.com
+120.226.152.53 passport.biligame.com
+#183.255.117.88 passport.biligame.com
+
+##s0.hdslb.com
+14.215.172.222 s0.hdslb.com
+#183.61.229.213 s0.hdslb.com
+
+##s1.hdslb.com
+#14.215.172.203 s1.hdslb.com
+#39.136.140.212 s1.hdslb.com（超时）
+163.181.35.180 s1.hdslb.com
+163.181.35.183 s1.hdslb.com
+163.181.35.184 s1.hdslb.com
+163.181.35.185 s1.hdslb.com
+163.181.35.186 s1.hdslb.com
+163.181.35.187 s1.hdslb.com
+163.181.35.203 s1.hdslb.com
+163.181.35.204 s1.hdslb.com
+#183.60.240.237 s1.hdslb.com（超时）
+
+##i2.hdslb.com
+60.188.66.35 i2.hdslb.com
+#113.96.178.35 i2.hdslb.com
+#122.228.115.35 i2.hdslb.com
+
+##upos-sz-estghw.bilivideo.com
+58.215.58.126 upos-sz-estghw.bilivideo.com
+
+##bvc.bilivideo.com
+#14.17.92.74 bvc.bilivideo.com
+14.17.92.71 bvc.bilivideo.com
+#23.236.97.62 bvc.bilivideo.com
+
+
+####bilibili_b站
+
+
+##qemu
+#37.19.194.81 download.qemu.org
+37.19.202.35 download.qemu.org
+#37.19.202.38 download.qemu.org
+#37.19.202.45 download.qemu.org
+#79.127.170.195 download.qemu.org
+#79.127.211.90 download.qemu.org
+#79.127.213.245 download.qemu.org
+#79.127.216.204 download.qemu.org
+#79.127.235.2 download.qemu.org
+#79.127.235.5 download.qemu.org
+#79.127.235.8 download.qemu.org
+#79.127.235.11 download.qemu.org
+#79.127.235.52 download.qemu.org
+#84.17.50.9 download.qemu.org
+#84.17.50.23 download.qemu.org
+#84.17.57.26 download.qemu.org
+#84.17.57.27 download.qemu.org
+#89.187.162.12 download.qemu.org
+#89.187.163.111 download.qemu.org
+#89.187.167.39 download.qemu.org
+#89.187.167.41 download.qemu.org
+#89.187.187.4 download.qemu.org
+#89.187.187.5 download.qemu.org
+#89.187.187.6 download.qemu.org
+#89.187.187.10 download.qemu.org
+#89.187.187.11 download.qemu.org
+#89.187.187.12 download.qemu.org
+#89.187.187.13 download.qemu.org
+#89.187.187.14 download.qemu.org
+#89.187.187.15 download.qemu.org
+#89.187.187.18 download.qemu.org
+#89.187.187.19 download.qemu.org
+#95.173.197.105 download.qemu.org
+#95.173.204.15 download.qemu.org
+#95.173.204.19 download.qemu.org
+#95.173.204.21 download.qemu.org
+#95.173.204.24 download.qemu.org
+#109.61.92.50 download.qemu.org
+#109.61.92.53 download.qemu.org
+#109.61.92.56 download.qemu.org
+#143.244.51.58 download.qemu.org
+#143.244.51.59 download.qemu.org
+#143.244.51.245 download.qemu.org
+#143.244.51.246 download.qemu.org
+#156.146.44.90 download.qemu.org
+#178.249.213.3 download.qemu.org
+#178.249.213.26 download.qemu.org
+#195.181.170.18 download.qemu.org
+#195.181.172.2 download.qemu.org
+#195.181.172.5 download.qemu.org
+#195.181.175.40 download.qemu.org
+#195.181.175.41 download.qemu.org
+#212.102.56.178 download.qemu.org
+#2a02:6ea0:c000::23 download.qemu.org
+#2a02:6ea0:c000::24 download.qemu.org
+#2a02:6ea0:c700::11 download.qemu.org
+#2a02:6ea0:c700::19 download.qemu.org
+#2a02:6ea0:c700::21 download.qemu.org
+#2a02:6ea0:c700::101 download.qemu.org
+#2a02:6ea0:c77a::47 download.qemu.org
+#2a02:6ea0:c77a::48 download.qemu.org
+#2a02:6ea0:c800::23 download.qemu.org
+#2a02:6ea0:c800::24 download.qemu.org
+#2a02:6ea0:c800::25 download.qemu.org
+#2a02:6ea0:c800::26 download.qemu.org
+#2a02:6ea0:c800::27 download.qemu.org
+#2a02:6ea0:c800::32 download.qemu.org
+#2a02:6ea0:d100::9 download.qemu.org
+#2a02:6ea0:d100::31 download.qemu.org
+#2a02:6ea0:d100::32 download.qemu.org
+#2a02:6ea0:d100::33 download.qemu.org
+#2a02:6ea0:d100::34 download.qemu.org
+#2a02:6ea0:d100::36 download.qemu.org
+#2a02:6ea0:d100::49 download.qemu.org
+#2a02:6ea0:d100::54 download.qemu.org
+#2a02:6ea0:d300::32 download.qemu.org
+#2a02:6ea0:d300::33 download.qemu.org
+#2a02:6ea0:d300::41 download.qemu.org
+#2a02:6ea0:d300::42 download.qemu.org
+#2a02:6ea0:d300::43 download.qemu.org
+#2a02:6ea0:d300::44 download.qemu.org
+#2a02:6ea0:d600::13 download.qemu.org
+#2a02:6ea0:d600::14 download.qemu.org
+#2a02:6ea0:d600::18 download.qemu.org
+#2a02:6ea0:dd00::4 download.qemu.org
+#2a02:6ea0:dd00::5 download.qemu.org
+#2a02:6ea0:dd00::7 download.qemu.org
+
+
+
 ######other
 199.36.158.100 chromium.org
 2001:4860:4802:32::1b chromium.org
 104.78.94.149 javadl.oracle.com
 #2620:1ec:c11::200 bing.com
 51.75.66.89 nomad-group.net
-178.33.105.203 download.xnview.com
+
+#178.33.105.203 download.xnview.com
+212.83.169.215 download.xnview.com
 
 
 180.163.150.162 cdn.ampproject.org
@@ -289,9 +577,46 @@ fe80:: translate.google.cn
 # 182.161.73.145 bidder.criteo.com
 ##criteo.com
 
+######cloudfront.net
+#3.160.156.29 d3g0gp89917ko0.cloudfront.net
+#3.160.156.63 d3g0gp89917ko0.cloudfront.net
+#3.160.156.88 d3g0gp89917ko0.cloudfront.net
+#3.160.156.121 d3g0gp89917ko0.cloudfront.net
+#18.239.196.20 d3g0gp89917ko0.cloudfront.net 
+#18.239.196.81 d3g0gp89917ko0.cloudfront.net
+#18.239.196.156 d3g0gp89917ko0.cloudfront.net
+#18.239.196.173 d3g0gp89917ko0.cloudfront.net 
+######cloudfront.net
+
+##docs.redhat.com
+#2.16.27.70 docs.redhat.com
+#2.16.27.82 docs.redhat.com
+#2.21.20.6 docs.redhat.com
+#2.21.20.20 docs.redhat.com
+#23.58.144.143 docs.redhat.com
+#23.58.144.151 docs.redhat.com
+210.71.227.202 docs.redhat.com
+#210.71.227.217 docs.redhat.com
+##docs.redhat.com
+
+
+##www.debuggerx.com
+#（全部超时）
+#104.21.72.16 www.debuggerx.com
+#172.67.173.191 www.debuggerx.com
+#188.114.96.0 www.debuggerx.com
+#188.114.97.0 www.debuggerx.com
+##www.debuggerx.com
+
+##www.aftermath.cn
+#（全部超时）
+#104.21.88.254 www.aftermath.cn
+#172.67.155.51 www.aftermath.cn
+#188.114.96.3 www.aftermath.cn
+#188.114.97.3 www.aftermath.cn
+##www.aftermath.cn
+
 ######other
-
-
 
 
 
@@ -336,15 +661,37 @@ fe80:: translate.google.cn
 #35.190.60.146 id.rlcdn.com
 # 127.0.0.1 id.rlcdn.com
 127.0.0.1 ups.analytics.yahoo.com
-74.118.186.44 sync.1rx.io
+46.228.174.117 sync.1rx.io
+#74.118.186.44 sync.1rx.io
 # 127.0.0.1 sync.1rx.io
 23.45.60.26 contextual.media.net
 # 127.0.0.1 contextual.media.net
+
 ######other 2
 
 
 
 
+
+
+######dns污染+链接已重置
+
+
+#18.65.14.38 w.soundcloud.com
+#18.65.14.40 w.soundcloud.com
+#18.65.14.78 w.soundcloud.com
+#18.65.14.106 w.soundcloud.com
+127.0.0.1 w.soundcloud.com
+#31.13.82.33 w.soundcloud.com
+#104.244.43.231 w.soundcloud.com
+#104.244.45.246 w.soundcloud.com
+#104.244.46.9 w.soundcloud.com
+#157.240.8.41 w.soundcloud.com
+#208.31.254.33 w.soundcloud.com		（超时）
+#2a03:2880:f126:83:face:b00c:0:25de w.soundcloud.com
+
+
+######dns污染+链接已重置
 
 
 
@@ -543,34 +890,34 @@ fe80::1 geo2.adobe.com
 127.0.0.1 xia.chemdraw.com.cn
 
 ### CleanMyMac
-127.0.0.1  mycleanmymac.com
-127.0.0.1   www.mycleanmymac.com
-127.0.0.1   xia.mycleanmymac.com
+127.0.0.1 mycleanmymac.com
+127.0.0.1 www.mycleanmymac.com
+127.0.0.1 xia.mycleanmymac.com
 
 ### Corel Draw
-127.0.0.1  coreldrawchina.com
-127.0.0.1   xia.coreldrawchina.com
-127.0.0.1   www.coreldrawchina.com
+127.0.0.1 coreldrawchina.com
+127.0.0.1 xia.coreldrawchina.com
+127.0.0.1 www.coreldrawchina.com
 
 ### Corel VideoStudio
-127.0.0.1  huishenghuiying.com.cn
-127.0.0.1   www.huishenghuiying.com.cn
-127.0.0.1   xia.huishenghuiying.com.cn
+127.0.0.1 huishenghuiying.com.cn
+127.0.0.1 www.huishenghuiying.com.cn
+127.0.0.1 xia.huishenghuiying.com.cn
 
 ### DeepFreeze
-127.0.0.1  bingdianhuanyuan.cn
-127.0.0.1   www.bingdianhuanyuan.cn
-127.0.0.1   xia.bingdianhuanyuan.cn
+127.0.0.1 bingdianhuanyuan.cn
+127.0.0.1 www.bingdianhuanyuan.cn
+127.0.0.1 xia.bingdianhuanyuan.cn
 
 ### EasyRecovery
-127.0.0.1   easyrecoverychina.com
-127.0.0.1  www.easyrecoverychina.com
-127.0.0.1  xia.easyrecoverychina.com
+127.0.0.1 easyrecoverychina.com
+127.0.0.1 www.easyrecoverychina.com
+127.0.0.1 xia.easyrecoverychina.com
 
 ### Edius
-127.0.0.1   ediuschina.com
-127.0.0.1  www.ediuschina.com
-127.0.0.1  xia.ediuschina.com
+127.0.0.1 ediuschina.com
+127.0.0.1 www.ediuschina.com
+127.0.0.1 xia.ediuschina.com
 
 ### FL Studio
 127.0.0.1 flstudiochina.com
@@ -646,15 +993,15 @@ fe80::1 geo2.adobe.com
 127.0.0.1 xia.jihehuaban.com.cn
 
 ### Sothink Logo Maker
-127.0.0.1   logoshejishi.com
-127.0.0.1   www.logoshejishi.com
-127.0.0.1   xia.logoshejishi.com
+127.0.0.1 logoshejishi.com
+127.0.0.1 www.logoshejishi.com
+127.0.0.1 xia.logoshejishi.com
 
 ### Sothink SWF Decompiler
-127.0.0.1   shankejingling.com
-127.0.0.1   www.shankejingling.com
-127.0.0.1   xia.shankejingling.com
-127.0.0.1   xiazai.shankejingling.com
+127.0.0.1 shankejingling.com
+127.0.0.1 www.shankejingling.com
+127.0.0.1 xia.shankejingling.com
+127.0.0.1 xiazai.shankejingling.com
 
 ### TeamViewer
 127.0.0.1 yuanchengxiezuo.com
@@ -712,6 +1059,114 @@ fe80::1 geo2.adobe.com
 
 
 
+# 小米电视开机广告
+127.0.0.1 ad.xiaomi.com
+127.0.0.1 ad1.xiaomi.com
+127.0.0.1 api.ad.xiaomi.com
+127.0.0.1 api.ad1.xiaomi.com
+127.0.0.1 ad.mi.com
+127.0.0.1 ad1.mi.com
+127.0.0.1 d.xiaomi.com
+127.0.0.1 d1.xiaomi.com
+127.0.0.1 cdn.ad.xiaomi.com
+127.0.0.1 cdn.ad1.xiaomi.com
+127.0.0.1 e.ad.xiaomi.com
+127.0.0.1 e.ad1.xiaomi.com
+127.0.0.1 new.api.ad.xiaomi.com
+127.0.0.1 new.api.ad1.xiaomi.com
+127.0.0.1 ssp.ad.xiaomi.com
+127.0.0.1 ssp.ad1.xiaomi.com
+127.0.0.1 ssp.api.ad.xiaomi.com
+127.0.0.1 ssp.api.ad1.xiaomi.com
+127.0.0.1 sdkconfig.ad.xiaomi.com
+127.0.0.1 sdkconfig.ad1.xiaomi.com
+127.0.0.1 sdkconfig.api.ad.xiaomi.com
+127.0.0.1 sdkconfig.api.ad1.xiaomi.com
+127.0.0.1 test.ad.xiaomi.com
+127.0.0.1 test.ad1.xiaomi.com
+127.0.0.1 test.new.api.ad.xiaomi.com
+127.0.0.1 test.new.api.ad1.xiaomi.com
+127.0.0.1 f1.market.xiaomi.com
+127.0.0.1 f2.market.xiaomi.com
+127.0.0.1 f3.market.xiaomi.com
+127.0.0.1 f4.market.xiaomi.com
+127.0.0.1 f5.market.xiaomi.com
+127.0.0.1 video.market.xiaomi.com
+127.0.0.1 f1.market.mi-img.com
+127.0.0.1 f2.market.mi-img.com
+127.0.0.1 f3.market.mi-img.com
+127.0.0.1 f4.market.mi-img.com
+127.0.0.1 f5.market.mi-img.com
+127.0.0.1 video.market.mi.com
+127.0.0.1 adv.sec.miui.com
+127.0.0.1 t7z.cupid.ptqy.gitv.tv
+127.0.0.1 api.cupid.ptqy.gitv.tv
+127.0.0.1 519332DA.rtc.youme.im
+127.0.0.1 admaster.com.cn
+127.0.0.1 v.admaster.com.cn
+127.0.0.1 alog.umeng.com
+127.0.0.1 hpplay.cdn.cibn.cc
+#  含kuyun的
+127.0.0.1 alert.kuyun.com
+127.0.0.1 config.kuyun.com
+127.0.0.1 logonext.tx.kuyun.com
+127.0.0.1 tvapi.kuyun.com
+#  含hpplay的  .cn
+127.0.0.1 ad.hpplay.cn
+127.0.0.1 adc.hpplay.cn
+127.0.0.1 api.hpplay.cn
+127.0.0.1 adcdn.hpplay.cn
+127.0.0.1 adeng.hpplay.cn
+127.0.0.1 cdn.hpplay.cn
+127.0.0.1 cdn1.hpplay.cn
+127.0.0.1 conf.hpplay.cn
+127.0.0.1 cloud.hpplay.cn
+127.0.0.1 fix.hpplay.cn
+127.0.0.1 image.hpplay.cn
+127.0.0.1 leboapi.hpplay.cn
+127.0.0.1 userapi.hpplay.cn
+127.0.0.1 hotupgrade.hpplay.cn
+127.0.0.1 rp.hpplay.cn
+127.0.0.1 rps.hpplay.cn
+127.0.0.1 ftp.hpplay.cn
+127.0.0.1 gslb.hpplay.cn
+127.0.0.1 sdkauth.hpplay.cn
+127.0.0.1 vipauth.hpplay.cn
+127.0.0.1 vipsdkauth.hpplay.cn
+127.0.0.1 sl.hpplay.cn
+127.0.0.1 pin.hpplay.cn
+127.0.0.1 tvapp.hpplay.cn
+127.0.0.1 devicemgr.hpplay.cn
+127.0.0.1 imdns.hpplay.cn
+127.0.0.1 h5.hpplay.cn
+#  含hpplay的  .com.cn
+127.0.0.1 ad.hpplay.com.cn
+127.0.0.1 adc.hpplay.com.cn
+127.0.0.1 api.hpplay.com.cn
+127.0.0.1 adcdn.hpplay.com.cn
+127.0.0.1 adeng.hpplay.com.cn
+127.0.0.1 cdn.hpplay.com.cn
+127.0.0.1 cdn1.hpplay.com.cn
+127.0.0.1 conf.hpplay.com.cn
+127.0.0.1 cloud.hpplay.com.cn
+127.0.0.1 fix.hpplay.com.cn
+127.0.0.1 image.hpplay.com.cn
+127.0.0.1 leboapi.hpplay.com.cn
+127.0.0.1 userapi.hpplay.com.cn
+127.0.0.1 hotupgrade.hpplay.com.cn
+127.0.0.1 rp.hpplay.com.cn
+127.0.0.1 rps.hpplay.com.cn
+127.0.0.1 ftp.hpplay.com.cn
+127.0.0.1 gslb.hpplay.com.cn
+127.0.0.1 sdkauth.hpplay.com.cn
+127.0.0.1 vipauth.hpplay.com.cn
+127.0.0.1 vipsdkauth.hpplay.com.cn
+127.0.0.1 sl.hpplay.com.cn
+127.0.0.1 pin.hpplay.com.cn
+127.0.0.1 tvapp.hpplay.com.cn
+127.0.0.1 devicemgr.hpplay.com.cn
+127.0.0.1 imdns.hpplay.com.cn
+127.0.0.1 h5.hpplay.com.cn
 
 
 

@@ -1,7 +1,7 @@
 
-wget "https://download.vroid.com/dist/BCSRFi3WXv/VRoidStudio-v1.2.0-win.exe"
+#wget "https://download.vroid.com/dist/BCSRFi3WXv/VRoidStudio-v1.2.0-win.exe"
 
-touch GodShit.{ED7BA470-8E54-465E-825C-99712043E01C}
+#touch GodShit.{ED7BA470-8E54-465E-825C-99712043E01C}
 #wget -c "https://github.com/rcmaehl/WhyNotWin11/releases/download/2.4.3.1/WhyNotWin11.exe"
 
 #wget media.steampowered.com/steamlink/android/latest/steamlink-android.apk
@@ -12,33 +12,33 @@ touch GodShit.{ED7BA470-8E54-465E-825C-99712043E01C}
 #wget -c "https://download.kde.org/stable/krita/5.0.2/krita-5.0.2-x86_64.appimage"
 #wget -c "https://download.kde.org/stable/krita/5.0.2/krita-x64-5.0.2-setup.exe"
 
+
+#wget https://dl.winehq.org/wine/wine-mono/7.2.0/wine-mono-7.2.0-x86.msi
+#wget https://dl.winehq.org/wine/wine-mono/7.2.0/wine-mono-7.2.0-x86.tar.xz
+
+
+
 ls /dev/dri/
 DRI_PRIME=1 wine PrprLive.exe 
 
 
 
 
-wget https://dl.winehq.org/wine/wine-mono/7.2.0/wine-mono-7.2.0-x86.msi
-wget https://dl.winehq.org/wine/wine-mono/7.2.0/wine-mono-7.2.0-x86.tar.xz
 
 
 
-
-
-
-
-sudo ln -s /home/rficespin/模板 /home/vrficespin/wine/wine32/模板 
-sudo ln -s /home/vrficespin/wine/wine32/模板 /home/vrficespin/wine/wine32/模板 
-sudo ln -s /home/vrficespin/wine/desk/模板 /home/vrficespin/wine/wine32/模板
-sudo ln -s /home/rficespin/wine/desk/模板 /home/rficespin/wine/wine32/模板
-sudo ln -s /home/rficespin/wine/desk/视频 /home/rficespin/wine/wine32/视频
-sudo ln -s /home/rficespin/wine/desk/下载 /home/rficespin/wine/wine32/下载
-sudo ln -s /home/rficespin/wine/desk/桌面 /home/rficespin/wine/wine32/Desktop
-sudo ln -s /home/rficespin/wine/desk/文档 /home/rficespin/wine/wine32/Documents
-sudo ln -s /home/rficespin/wine/desk/音乐 /home/rficespin/wine/wine32/Music
-sudo ln -s /home/rficespin/wine/desk/图片 /home/rficespin/wine/wine32/Pictures
+sudo ln -s /home//模板 /home//wine/wine32/模板 
+sudo ln -s /home//wine/wine32/模板 /home//wine/wine32/模板 
+sudo ln -s /home//wine/desk/模板 /home//wine/wine32/模板
+sudo ln -s /home//wine/desk/模板 /home//wine/wine32/模板
+sudo ln -s /home//wine/desk/视频 /home//wine/wine32/视频
+sudo ln -s /home//wine/desk/下载 /home//wine/wine32/下载
+sudo ln -s /home//wine/desk/桌面 /home//wine/wine32/Desktop
+sudo ln -s /home//wine/desk/文档 /home//wine/wine32/Documents
+sudo ln -s /home//wine/desk/音乐 /home//wine/wine32/Music
+sudo ln -s /home//wine/desk/图片 /home//wine/wine32/Pictures
 rm ~/.wine 
-sudo ln -s /home/rficespin/wine/wine32 /home/rficespin/wine/wine32/.wine
+sudo ln -s /home//wine/wine32 /home//wine/wine32/.wine
 ls -la
 
 
@@ -52,8 +52,8 @@ ls -la
 
 #SG
 
-wine /media/vrficespin/4k/Linux/wine/wine/wine-mono/7.2.0/wine-mono-7.2.0-x86.msi && wine /media/vrficespin/4k/Linux/wine/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86.msi && wine /media/vrficespin/4k/Linux/wine/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86_86.msi
-wine /media/vrficespin/U深度盘/exe/驱动/vc/2017/vc2017redist_x86.exe && wine /media/vrficespin/U深度盘/exe/驱动/vc/2017/vc2017redist_x64.exe
+wine /media//4k/Linux/wine/wine/wine-mono/7.2.0/wine-mono-7.2.0-x86.msi && wine /media//4k/Linux/wine/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86.msi && wine /media//4k/Linux/wine/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86_86.msi
+wine /media//U深度盘/exe/驱动/vc/2017/vc2017redist_x86.exe && wine /media//U深度盘/exe/驱动/vc/2017/vc2017redist_x64.exe
 
 winetricks -f dxvk1101 d3dcompiler_42 d3dcompiler_43 d3dcompiler_46 d3dcompiler_47 d3dx9 msxml3 quartz vcrun2010 wsh57
 #winetricks -f wmp10

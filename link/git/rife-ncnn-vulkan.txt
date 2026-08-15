@@ -12,6 +12,8 @@ http://github.com/nihui/rife-ncnn-vulkan
 ./rife-ncnn-vulkan -i input_frames/ -o output_frames/ -g -1,-1,0,1 -j 2:4,4,2,1:4
 
 
+cd ~/mirrors/rife-ncnn-vulkan/build
+./rife-ncnn-vulkan -m ../models/rife -0 /////「无尽的三月七」/共振结果-19-9.jpg -1 /////「无尽的三月七」/共振结果-19-6.jpg -o ../../19-9+19-6_rife.jpg
 
 
 

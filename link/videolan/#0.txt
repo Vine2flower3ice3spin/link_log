@@ -2,7 +2,7 @@
 http://www.videolan.org/vlc/
 
 
-
+https://mirrors.tuna.tsinghua.edu.cn/videolan-ftp/vlc
 
 
 

@@ -1,18 +1,23 @@
 
+
 http://vroid.com/studio
 http://download.vroid.com/dist/WcuqUoAfM6/VRoidStudio-v1.15.1-win.exe
 
 
 https://3tene.com/free/
+https://3tene.com/wp-content/uploads/download/3teneFREE_V4_4.0.10.zip
 
 
 
 
 
 
+# blender导入vrm的插件
+https://github.com/saturday06/VRM-Addon-for-Blender
 
 
 
+#已知问题，用wine启动2.6.0~2.8.0+的版本的VRoidStudio，会出现无法操作的问题，降级到2.5.0才正常
 
 
- 
+

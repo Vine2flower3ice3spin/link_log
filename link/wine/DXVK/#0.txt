@@ -4,11 +4,6 @@ http://github.com/doitsujin/dxvk
 
 
 
-https://github.com/ValveSoftware/Proton
-https://github.com/ValveSoftware/Proton/wiki/Proton-FAQ
-
-
-
 
 
 

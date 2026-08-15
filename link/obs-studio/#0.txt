@@ -8,7 +8,8 @@ http://blog.skk.moe/post/add-ppa-to-debian/
 
 
 
-
+#	spout2
+http://github.com/Off-World-Live/obs-spout2-plugin
 
 
 

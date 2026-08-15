@@ -4,14 +4,16 @@ http://www.xnview.com/en/xnviewmp/
 
 
 
+#2024-07-08
+1.7.2 也有bug，deb包，4:4:4、100%“无损”、速度0的avif实际是有损，幸好发现及时，只破坏了几张不重要的对话的截图，可惜手贱把1.7.1给删了且没备份，之后看下ubuntu那边是不是1.7.1，有的话看下有没有同款bug，没的话复制一份
+
+x11vnc也有bug，henduozimeile，da de zi dou mei le，也可能是fcitx有bug，因为ctrl+空格后又能远程输ru，bu yi ding，zi da yi ban you bu xing le
 
 
 
 
-
-
-
-
+#2025-06-15
+更新1.9.2后，linux版转换格式成avif任然只能导出全损画质，
 
 
  

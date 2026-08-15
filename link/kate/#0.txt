@@ -4,5 +4,9 @@ http://kate-editor.org/zh-cn/get-it/
 
 
 
+https://sourceforge.net/projects/kdiff3/files/kdiff3/
+https://github.com/KDE/kompare
+https://meldmerge.org/
+
 
 

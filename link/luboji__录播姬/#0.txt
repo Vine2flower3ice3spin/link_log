@@ -1,0 +1,15 @@
+
+https://rec.danmuji.org/install/cli/
+http://github.com/BililiveRecorder/BililiveRecorder
+
+
+
+
+https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0
+https://learn.microsoft.com/zh-cn/dotnet/core/install/linux-debian?tabs=dotnet8
+
+
+#“ Microsoft 包签名密钥”，dotnet的apt源
+https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb
+
+

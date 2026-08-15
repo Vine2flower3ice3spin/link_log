@@ -1,23 +1,27 @@
-ffmpeg -help > ./ffmpeg-help_/ffmpeg-help
-ffmpeg -bsfs > ./ffmpeg-help_/ffmpeg-bsfs
-ffmpeg -buildconf > ./ffmpeg-help_/ffmpeg-buildconf
-ffmpeg -formats > ./ffmpeg-help_/ffmpeg-formats
-ffmpeg -muxers > ./ffmpeg-help_/ffmpeg-muxers
-ffmpeg -demuxers > ./ffmpeg-help_/ffmpeg-demuxers
-ffmpeg -devices > ./ffmpeg-help_/ffmpeg-devices
-ffmpeg -codecs > ./ffmpeg-help_/ffmpeg-codecs
-ffmpeg -decoders > ./ffmpeg-help_/ffmpeg-decoders
-ffmpeg -encoders > ./ffmpeg-help_/ffmpeg-encoders
-ffmpeg -protocols > ./ffmpeg-help_/ffmpeg-protocols
-ffmpeg -filters > ./ffmpeg-help_/ffmpeg-filters
-ffmpeg -pix_fmts > ./ffmpeg-help_/ffmpeg-pix_fmts
-ffmpeg -layouts > ./ffmpeg-help_/ffmpeg-layouts
-ffmpeg -sample_fmts > ./ffmpeg-help_/ffmpeg-sample_fmts
-ffmpeg -dispositions > ./ffmpeg-help_/ffmpeg-dispositions
-ffmpeg -colors > ./ffmpeg-help_/ffmpeg-colors
-ffmpeg -sources > ./ffmpeg-help_/ffmpeg-sources
-ffmpeg -sinks > ./ffmpeg-help_/ffmpeg-sinks
-ffmpeg -hwaccels > ./ffmpeg-help_/ffmpeg-hwaccels
-ffmpeg -version > ./ffmpeg-help_/ffmpeg-version
+mkdir ./ffmpeg__-help_
 
-ffmpeg -help full > ./ffmpeg-help_/ffmpeg-help_full
+ffmpeg -help > ./ffmpeg__-help_/ffmpeg__-help
+ffmpeg -bsfs > ./ffmpeg__-help_/ffmpeg__-bsfs
+ffmpeg -buildconf > ./ffmpeg__-help_/ffmpeg__-buildconf
+ffmpeg -formats > ./ffmpeg__-help_/ffmpeg__-formats
+ffmpeg -muxers > ./ffmpeg__-help_/ffmpeg__-muxers
+ffmpeg -demuxers > ./ffmpeg__-help_/ffmpeg__-demuxers
+ffmpeg -devices > ./ffmpeg__-help_/ffmpeg__-devices
+ffmpeg -codecs > ./ffmpeg__-help_/ffmpeg__-codecs
+ffmpeg -decoders > ./ffmpeg__-help_/ffmpeg__-decoders
+ffmpeg -encoders > ./ffmpeg__-help_/ffmpeg__-encoders
+ffmpeg -protocols > ./ffmpeg__-help_/ffmpeg__-protocols
+ffmpeg -filters > ./ffmpeg__-help_/ffmpeg__-filters
+ffmpeg -pix_fmts > ./ffmpeg__-help_/ffmpeg__-pix_fmts
+ffmpeg -layouts > ./ffmpeg__-help_/ffmpeg__-layouts
+ffmpeg -sample_fmts > ./ffmpeg__-help_/ffmpeg__-sample_fmts
+ffmpeg -dispositions > ./ffmpeg__-help_/ffmpeg__-dispositions
+ffmpeg -colors > ./ffmpeg__-help_/ffmpeg__-colors
+ffmpeg -sources > ./ffmpeg__-help_/ffmpeg__-sources
+ffmpeg -sinks > ./ffmpeg__-help_/ffmpeg__-sinks
+ffmpeg -hwaccels > ./ffmpeg__-help_/ffmpeg__-hwaccels
+ffmpeg -version > ./ffmpeg__-help_/ffmpeg__-version
+
+ffmpeg -help full > ./ffmpeg__-help_/ffmpeg__-help_full
+
+echo 0

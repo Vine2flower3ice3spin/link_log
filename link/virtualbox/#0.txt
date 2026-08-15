@@ -27,4 +27,3 @@ VBoxManage modifyhd --compact debug-disk-0.vdi
 
 
 
-

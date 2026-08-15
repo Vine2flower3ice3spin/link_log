@@ -13,7 +13,8 @@ http://sourceforge.net/projects/qtractor/files/
 
 
 
-
+#文档
+https://www.qtractor.org/doc/Manual%20-%202%20Installing%20and%20Configuring%20Qtractor.html
 
 
 

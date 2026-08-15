@@ -4,8 +4,8 @@ http://mirror.tuna.tsinghua.edu.cn/blender/blender-release/
 
 
 
-
-
+https://opendata.blender.org/
+https://download.blender.org/release/BlenderBenchmark2.0/launcher/benchmark-launcher-3.3.0-linux.tar.gz
 
 
 

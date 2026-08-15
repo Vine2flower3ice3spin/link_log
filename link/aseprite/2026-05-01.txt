@@ -1,0 +1,130 @@
+
+https://www.aseprite.org/
+
+
+https://github.com/aseprite/aseprite/blob/main/INSTALL.md
+
+https://github.com/aseprite/skia#readme
+
+##win sdk
+https://developer.microsoft.com/zh-cn/windows/downloads/sdk-archive/
+
+
+
+#一个b站的教程
+https://www.bilibili.com/read/cv17245920/
+#
+
+
+
+
+
+##尝试
+
+
+#skia
+mkdir -p /4k-bak/Linux/aseprite && cd /4k-bak/Linux/aseprite
+#mkdir -p /ciotfos/Linux/aseprite/skia && cd /ciotfos/Linux/aseprite/skia
+
+#墙了	git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+#要登陆	git clone https://gitee.com/mirrors_chromium_googlesource/depot_tools.git
+#无法下载zip	用32位的令牌	（数据删除）
+#重试两天没成功克隆，结果直接下载zip完事		git clone -b aseprite-m124 https://github.com/aseprite/skia.git
+#export PATH="${PWD}/depot_tools:${PATH}"
+cd skia
+python3 tools/git-sync-deps
+python3 bin/fetch-ninja
+
+gn gen out/Release-x64 --args="is_debug=false is_official_build=true skia_use_system_expat=false skia_use_system_icu=false skia_use_system_libjpeg_turbo=false skia_use_system_libpng=false skia_use_system_libwebp=false skia_use_system_zlib=false skia_use_freetype=true skia_use_harfbuzz=true skia_pdf_subset_harfbuzz=true skia_use_system_freetype2=false skia_use_system_harfbuzz=false"
+
+ninja -C out/Release-x64 skia modules
+
+
+
+
+#aseprite
+mkdir -p /4k-bak/Linux/aseprite && cd /4k-bak/Linux/aseprite
+#mkdir -p /ciotfos/Linux/aseprite && cd /ciotfos/Linux/aseprite
+
+git clone --recursive http://github.com/aseprite/aseprite.git
+
+cd aseprite
+git pull
+#（更新）
+git submodule update --init --recursive
+
+
+mkdir -p /4k-bak/Linux/aseprite/build && cd /4k-bak/Linux/aseprite/build
+#mkdir -p /ciotfos/Linux/aseprite/aseprite/build && cd /ciotfos/Linux/aseprite/aseprite/build
+
+#	实际尝试时export完全没有生效
+#export ase_dir=/ciotfos/Linux/aseprite/skia/Skia-Linux-m124
+#export CC=clang-22 
+#export CXX=clang++-22 
+#	直接
+CC=clang-22 CXX=clang++-22 cmake \
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -DCMAKE_CXX_FLAGS:STRING=-stdlib=libstdc++ \
+  -DCMAKE_EXE_LINKER_FLAGS:STRING=-stdlib=libstdc++ \
+  -DLAF_BACKEND=skia \
+  -DSKIA_DIR=/ciotfos/Linux/aseprite/skia/Skia-Linux-m124 \
+  -DSKIA_LIBRARY_DIR=/ciotfos/Linux/aseprite/skia/Skia-Linux-m124/out/Release-x64 \
+  -DSKIA_LIBRARY=/ciotfos/Linux/aseprite/skia/Skia-Linux-m124/out/Release-x64/libskia.a \
+  -DENABLE_PSD=false  -DENABLE_I18N_STRINGS=true \
+  -G Ninja \
+  ..
+ninja aseprite
+
+#可能是因为 -DENABLE_PSD=false/true 是在libc++环境写的，会导致在使用libstdc++编译时报错未定义，只能放弃启用	
+
+##尝试
+
+
+
+
+
+
+####官方在github写的Linux的编译教程
+
+sudo apt-get install -y g++ clang cmake ninja-build libx11-dev libxcursor-dev libxi-dev libxrandr-dev libgl1-mesa-dev libfontconfig1-dev
+
+cd aseprite
+mkdir build
+cd build
+export CC=clang
+export CXX=clang++
+cmake \
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -DCMAKE_CXX_FLAGS:STRING=-stdlib=libstdc++ \
+  -DCMAKE_EXE_LINKER_FLAGS:STRING=-stdlib=libstdc++ \
+  -DLAF_BACKEND=skia \
+  -DSKIA_DIR=$HOME/deps/skia \
+  -DSKIA_LIBRARY_DIR=$HOME/deps/skia/out/Release-x64 \
+  -DSKIA_LIBRARY=$HOME/deps/skia/out/Release-x64/libskia.a \
+  -G Ninja \
+  ..
+ninja aseprite
+
+##
+
+####官方在github写的skia的Linux的编译教程
+
+mkdir $HOME/deps
+cd $HOME/deps
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+git clone -b aseprite-m124 https://github.com/aseprite/skia.git
+export PATH="${PWD}/depot_tools:${PATH}"
+cd skia
+python3 tools/git-sync-deps
+python3 bin/fetch-ninja
+gn gen out/Release-x64 --args="is_debug=false is_official_build=true skia_use_system_expat=false skia_use_system_icu=false skia_use_system_libjpeg_turbo=false skia_use_system_libpng=false skia_use_system_libwebp=false skia_use_system_zlib=false skia_use_freetype=true skia_use_harfbuzz=true skia_pdf_subset_harfbuzz=true skia_use_system_freetype2=false skia_use_system_harfbuzz=false"
+ninja -C out/Release-x64 skia modules
+
+##
+
+
+
+
+
+
+

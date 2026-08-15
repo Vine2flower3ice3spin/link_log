@@ -1,0 +1,15 @@
+
+
+
+https://github.com/openzfsonwindows/openzfs
+
+
+
+https://openzfs.github.io/openzfs-docs/Getting%20Started/index.html
+
+
+
+https://github.com/openzfsonwindows/ZFSin
+
+
+

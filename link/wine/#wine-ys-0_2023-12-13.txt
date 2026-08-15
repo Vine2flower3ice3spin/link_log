@@ -1,7 +1,7 @@
 ################################4.2################################
 #配置环境，需根据实际情况调整，
-#假设ntfs分区 E: 挂载在 /media/rficespin/Adobe ，原神已安装在 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/ 
-#假设ntfs分区 A: 挂载在/media/rficespin/debu ，云原神安装在 /media/rficespin/debu/Program\ Files/enshin\ Impact\ Cloud\ Game/ 
+#假设ntfs分区 E: 挂载在 /media//Adobe ，原神已安装在 /media//Adobe/Program\ Files/Genshin\ Impact\ Game/ 
+#假设ntfs分区 A: 挂载在/media//debu ，云原神安装在 /media//debu/Program\ Files/enshin\ Impact\ Cloud\ Game/ 
 #原本用 wine-Staging 的 8.21~bookworm-1 ，最新的9-rc1似乎有问题，
 #sudo apt install {wine-staging,wine-staging-amd64,winehq-staging,wine-staging-dev,wine-staging-dbg,wine-staging-i386:i386}=8.21~bookworm-1
 
@@ -26,8 +26,8 @@ WINEPREFIX=~/wine-ys/wine winecfg
 
 
 rm ~/wine-ys/wine/dosdevices/e:: 
-ln -s /media/rficespin/debu ~/wine-ys/wine/dosdevices/a: 
-ln -s /media/rficespin/Adobe ~/wine-ys/wine/dosdevices/e: 
+ln -s /media//debu ~/wine-ys/wine/dosdevices/a: 
+ln -s /media//Adobe ~/wine-ys/wine/dosdevices/e: 
 #需要先运行一次winecfg后再进行，先创建 ~/wine-ys/wine/dosdevices 会导致卡死，
 
 #winecfg > 驱动器 > a:/e: > 显示高级选项 中，把类型修改为 本地硬盘 ，以避免变动，根据需要加，
@@ -35,9 +35,9 @@ ln -s /media/rficespin/Adobe ~/wine-ys/wine/dosdevices/e:
 
 WINEPREFIX=~/wine-ys/wine winetricks -f dxvk1103 
 
-WINEPREFIX=~/wine-ys/wine wine64 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe 
+WINEPREFIX=~/wine-ys/wine wine64 /media//Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe 
 
-WINEPREFIX=~/wine-ys/wine wine64 /media/rficespin/debu/Program\ Files/Genshin\ Impact\ Cloud\ Game/Genshin\ Impact\ Cloud\ Game.exe 
+WINEPREFIX=~/wine-ys/wine wine64 /media//debu/Program\ Files/Genshin\ Impact\ Cloud\ Game/Genshin\ Impact\ Cloud\ Game.exe 
 
 #启动游戏后可能会在登陆时卡验证
 #方法A：直接手机端云原神或米游社扫码登陆
@@ -48,7 +48,7 @@ WINEPREFIX=~/wine-ys/wine wine64 /media/rficespin/debu/Program\ Files/Genshin\ I
 
 
 #9-rc1，环境异常，
-VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json DRI_PRIME=pci-0000_00_02_0 WINEPREFIX=~/wine-ys/wine wine64 /media/rficespin/Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe 
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.i686.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json DRI_PRIME=pci-0000_00_02_0 WINEPREFIX=~/wine-ys/wine wine64 /media//Adobe/Program\ Files/Genshin\ Impact\ Game/YuanShen.exe 
 
 ################################4.2################################
 

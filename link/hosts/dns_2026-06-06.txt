@@ -1,0 +1,705 @@
+
+
+
+-port=53
+-port=5353
+(53,6+4)
+(53+5353,6+4)
+
+
+				https://dns.icoa.cn/
+################国内知名公共 DNS 服务器（Chinese Public DNS Server）################
+
+########腾讯 DNS (DNSPod)
+##	由 DNSPod 提供的公共免费 DNS，后来 DNSPod 被腾讯(Tencent)收购，现在属于腾讯公司所有，稳定性和连通性也是不错的，经我在海外好友测试反馈，海外也可以使用。
+##	DNSPod 除了 IPv4，现在同时支持 IPv6 DNS 和 DoT/DoH 服务。新增加了 DoT/DoH 的 IP 版。 补充，最新测试 IPv6 应该是禁 ping 了，但是可以正常解析。感谢网友 F_ 留言爆料，DNSPod 的 IPv6 有两个，已增加。
+##	有多个网友留言提醒，说 DNSPod 也对免费用户做出限制，我看了下是针对单个域名不能超过20QPS，相比阿里针对的单个IP限制20QPS，个人觉得还是有区别的。普通用户应该不会同时对单个域名进行20QPS的请求。
+#    IPv4:
+119.29.29.29
+119.28.28.28
+#    IPv6:
+2402:4e00::
+2402:4e00:1::
+#   DoH:
+https://doh.pub/dns-query
+#    DoH(IP版): 感谢网友 J 爆料提供，腾讯IP版DoH 不再提供服务。
+# https://1.12.12.12/dns-query
+# https://120.53.53.53/dns-query
+#    DoH (国密 SM2,基于腾讯云政企国密解决方案):
+https://sm2.doh.pub/dns-query
+#    DoT:
+dot.pub
+#    DoT(IP版)(注意 DoT 跟 IPv4 是有区别的，不能混用): 感谢网友 J 爆料提供，腾讯IP版DoT 不再提供服务。
+# 1.12.12.12
+# 120.53.53.53
+########腾讯 DNS (DNSPod)
+
+
+########阿里 DNS (Alidns)
+##	这组 DNS 是由阿里巴巴提供的，国内连通性还是不错的，有我在海外好友反馈，海外部分地区连通性不是特别好，具体可以测试一下。
+##	阿里 DNS 同时提供了 IPv4/IPv6 DNS 和 DoT/DoH 服务。
+##	最近有网友 豆豆10086 留言爆料，说阿里公共DNS免费版将进行限速，经过官网核实2024年9月30日起，阿里将会对 公共DNS免费版 进行限速（单个IP请求不能超过20QPS）。我想说的是作为大型互联网公司应该承担起相应的社会责任，我是没看到国外哪个大型互联网公司说对自己的 公共DNS 进行限速的。
+##	可能是限速引起负面影响比较大，现在阿里官方页面对于限速不写具体数据了，改成模糊语言。我觉得如果对非正常用户进行限制可以理解，但是对于普通用户的正常使用，作为一个负责任的企业不应该做限制。
+##	网友 Earsum 留言爆料，IP地址同样能用于 DoH，这个我未测试，不过既然 DoT 能用，那么 DoH 能用也很合理。
+#    IPv4:
+223.5.5.5
+223.6.6.6
+#    IPv6:
+2400:3200::1
+2400:3200:baba::1
+#    DoH:
+https://dns.alidns.com/dns-query
+https://223.5.5.5/dns-query
+https://223.6.6.6/dns-query
+#    DoT: 
+dns.alidns.com
+223.5.5.5
+223.6.6.6
+########阿里 DNS (Alidns)
+
+
+########百度 DNS
+##	中国最大的搜索引擎百度提供的公共 DNS，经测试海外连通性也是不错的，暂时百度只提供了一组 IPv4 和 IPv6 DNS 地址。 陆续有网友 maidmeow4 和 匿名网友 等留言爆料，百度的 IPv6 已经停用。最新测试，IPv6 确实已经无法正常解析了。
+#    IPv4:
+180.76.76.76
+#    IPv6: [已无法使用]经过测试，百度的 IPv6 DNS 无法正常解析。
+# 2400:da00::6666
+########百度 DNS
+
+
+########字节跳动 TrafficRoute DNS
+##	字节跳动旗下火山引擎也提供了公共 DNS 服务 —— TrafficRoute DNS，目前只支持 IPv4。
+#    IPv4:
+180.184.1.1
+180.184.2.2
+########字节跳动 TrafficRoute DNS
+
+
+########360 安全 DNS
+##	360 提供的 DNS 服务，只提供了 IPv4 和 DoT/DoH 服务。
+#    针对中国电信/铁通/移动的 IPv4:
+101.226.4.6
+218.30.118.6
+#    针对中国联通的 IPv4:
+123.125.81.6
+140.207.198.6
+#    DoH:
+https://doh.360.cn
+#    DoT: 
+dot.360.cn
+########360 安全 DNS
+
+
+########中国电信 IPv6 DNS
+##	注意不同省份分配的DNS是不同的，使用自动分配的本地DNS肯定更快一些
+#    河北电信 IPv6 DNS: 如果用河北电信的宽带应该会自动分配这两个IP
+240e:4c:4008::1
+240e:4c:4808::1
+#    广东电信 IPv6 DNS: 感谢广东河源的网友 leaves6 留言爆料
+240e:1f:1::1
+240e:1f:1::33
+#    山东电信 IPv6 DNS: 感谢山东青岛的网友 三旬老汉 留言爆料
+240e:4e:800::66
+240e:4e::66
+#    四川电信 IPv6 DNS: 感谢四川内江的网友 Mr.Ren 留言爆料
+240e:56:4000:8000::69
+240e:56:4000::218
+#    湖北电信 IPv6 DNS: 感谢湖北孝感的网友 wangwenjie 留言爆料
+240e:d:0:100::6
+#    陕西电信 IPv6 DNS: 感谢陕西西安的网友 Oly 留言爆料
+240e:f:a::6
+240e:f:a00b::6
+#    安徽电信 IPv6 DNS: 感谢安徽淮北的网友 Dormant 留言爆料
+240e:46:4088::4088
+240e:46:4888::4888
+#    贵州电信 IPv6 DNS: 感谢贵州贵阳的网友 CX 留言爆料
+240e:4a:4400:3::67
+240e:4a:4400:3::167
+#    天津电信 IPv6 DNS: 感谢 匿名网友 留言爆料。
+240e:45::6666
+240e:45::8888
+#	新疆电信 IPv6 DNS: 感谢新疆网友 lonelyrye 爆料提供。
+240e:51:c800:4::4
+240e:51:c800:8::8
+#	广西电信 IPv6 DNS: 感谢广西钦州网友 〖天蓝/空韵〗 爆料提供。
+240e:9:2000:100
+240e:9::100
+#	湖南电信 IPv6 DNS: 感谢网友 moyan 爆料提供。
+240e:50:5000::80
+240e:50:c800::210
+#	福建电信 IPv6 DNS: 感谢福建厦门的网友 Yooofox 爆料提供。
+240e:14:e000::1
+240e:14:6000::1
+#	江苏电信 IPv6 DNS: 感谢网友 BronyDee 爆料提供。
+240e:5a::6666
+240e:5b::6666
+#	上海电信 IPv6 DNS: 感谢上海网友 Kyo 爆料提供。
+240e:58:c000:1000:116:228:111:118
+240e:58:c000:1600:180:168:255:18
+#	云南电信 IPv6 DNS: 感谢云南大理的网友 Etern 留言爆料
+240e:52:4000::8888
+240e:52:4800::8888
+#	吉林电信 IPv6 DNS: 感谢吉林长春的网友 clever0922 留言爆料
+240e:211::6666
+240e:212::6666
+#	河南电信 IPv6 DNS: 感谢河南洛阳网友 pdone 爆料提供。
+240e:4b::88
+240e:4b:1000::88
+
+########中国电信 IPv6 DNS
+
+
+########中国联通 IPv6 DNS
+##		由于我使用的网络是电信，联通的DNS无法测试能否使用，大家自己试试吧。
+#	IPv6: 如果用中国联通的宽带可能会自动分配这三个IP，其中第三个为内蒙网友yvbai233留言爆料
+2408:8899::8
+2408:8888::8
+2408:8000::8
+#	安徽联通 IPv6 DNS: 感谢安徽亳州的网友 也儿夕 留言爆料
+2408:8000:c000::8888
+#	重庆联通 IPv6 DNS: 感谢重庆的 匿名网友 爆料提供。
+2408:8663::2
+2408:8662::2
+#	上海联通 IPv6 DNS: 感谢上海的网友 mingjmisnh 爆料提供。
+2408:8026:480:112::6666
+#	江西联通 IPv6 DNS: 感谢江西南昌的 匿名网友 爆料提供。
+2408:8000:eeee::e
+2408:8000:eeee::f
+
+########中国联通 IPv6 DNS
+
+
+########中国移动 IPv6 DNS
+##		提供中国移动宽带自动分配的两个 IPv6 地址，如果你是移动用户可以留言爆料。
+#	IPv6: 感谢河南郑州网友 who 留言爆料，这个挺短的，不知道是移动都能用，还是针对河南移动。
+2409:8088::a
+2409:8088::b
+#	安徽移动 IPv6 DNS: 感谢安徽阜阳的网友 Yunyu 留言爆料。
+2409:8030:2000::1
+2409:8030:2000::2
+#	海南移动 IPv6 DNS: 感谢网友 怖川buir 留言爆料。
+2409:805e:2000::6666
+2409:805e:2000::8888
+#	河北移动 IPv6 DNS: 感谢河北石家庄的网友 DXVK 留言爆料。
+2409:8008:2000::1
+2409:8008:2000:100::1
+#	广东移动 IPv6 DNS: 感谢广州的 匿名网友 留言爆料。
+2409:8057:2000:2::8
+2409:8057:2000:6::8
+#	感谢广州的 匿名网友 爆料提供。
+2409:8057:2000::8
+#	感谢广州的网友 lvybridge 爆料提供。
+2409:8057:2060::10
+#	北京移动 IPv6 DNS: 感谢北京网友 我不知道855756 爆料提供。
+2409:8000:2000:0:70::1
+2409:8000:2000:0:170::1
+#	江苏移动 IPv6 DNS: 感谢网友 BronyDee 爆料提供。
+2409:8020:2000::6
+2409:8020:2000::8
+#	广西移动 IPv6 DNS: 感谢广西北海网友御坂美琴爆料提供。
+2409:805c:2000:3000::1000
+2409:805c:2000:3001::1000
+#	湖北移动 IPv6 DNS: 感谢武汉网友 希夷 爆料提供。
+2409:804c:2000:1::1
+2409:804c:2000:2::1
+#	湖南移动 IPv6 DNS: 感谢 匿名网友 爆料提供。
+2409:8050:2000:1000::1
+#	感谢网友 lvybridge 爆料提供。
+2409:8050:2000::1
+#	甘肃移动 IPv6 DNS: 感谢甘肃兰州的网友 Zlatan 爆料提供
+2409:8074:20ff:1000::a
+2409:8074:20ff:1000::b
+#	辽宁移动 IPv6 DNS: 感谢辽宁大连网友 大黄狗 爆料提供
+2409:8014:2000::1
+#	浙江移动 IPv6 DNS: 感谢嘉兴网友 Xuan_er 和温州网友 Zhou356 爆料提供。
+2409:8028:2000::1111
+2409:8028:2000::2222
+#	四川移动 IPv6 DNS: 感谢四川成都的 匿名网友 留言爆料。
+2409:8062:2000:1::1
+2409:8062:2000:1::2
+
+########中国移动 IPv6 DNS
+
+
+########114DNS
+##	114DNS
+
+南京信风提供的公共DNS，现阶段只有IPv4
+#	IPv4 纯净版 
+114.114.114.114
+114.114.115.115
+#	IPv4 安全版: 拦截 钓鱼病毒木马网站 等
+114.114.114.119
+114.114.115.119
+#	IPv4 家庭版: 拦截 色情网站，保护少年儿童
+114.114.114.110
+114.114.115.110
+
+########114DNS
+
+
+########CNNIC DNS
+##		是由中国互联网信息中心 CNNIC 提供的免费公共 DNS，同时支持 IPv4 和 IPv6。我自己没用过，大家可以尝试一下。
+#	IPv4:
+1.2.4.8
+210.2.4.8
+#	IPv6: [已无法使用] 最新有网友给我留言反馈这个 IPv6 无法解析了，然后我查了下 CNNIC 官网都查不到这个 IP 了，并且经过测试确实无法解析了。
+# 2001:dc7:1000::1
+#	北京市互联网域名系统工程技术研究中心 IPv4:
+1.8.8.8
+
+########CNNIC DNS
+
+
+########Yeti DNS
+##	Yeti IPv6 Project 是由WIDE、TISF 和 BII 发起的一个只针对 IPv6 的互联网公益 DNS 项目，现阶段主要以 IPv6 服务为主。各公司、学校、组织都可以加入这个项目提供 DNS 服务。
+##	近期有多个网友留言反馈 Yeti 的 DNS 好像不行了，确实经过测试暂时不可用，建议更换其他服务器。
+#    Yeti 北京互联网研究所: [已无法使用]
+240c:f:1:22::6
+240C::6666
+240C::6644
+#    Yeti 南京:
+240e:3ae:936:3e70::6
+#    Yeti 成都:
+240e:d9:c200:14c:7472::19e0
+#    Yeti 广州:
+240e:6b0:200::139
+####		DoH/DoT
+##	由 Yeti Project 中国发起者 下一代互联网关键技术和评测北京研究中心 提供
+##	离了大普了朋友们，之前是 DNS 无法解析，现在有网友 Mr.Ren 反馈官网都打不开了。
+#    DoH: [已无法使用]
+https://dns.ipv6dns.com/dns-query
+#    DoT: [已无法使用]
+dns.ipv6dns.com
+########Yeti DNS
+
+
+########OneDNS
+##	北京微步在线科技有限公司提供的 DNS 服务，不太了解到底怎么样，大家可以试试看。其中117.50这个无法 ping 通，不建议使用。本站展示的是该公司提供的纯净版DNS服务。
+#    IPv4:
+52.80.52.52
+117.50.10.10
+#    IPv6:
+2400:7fc0:849e:200::8
+2404:c2c0:85d8:901::8
+#    DoH:
+doh-pure.onedns.net/dns-query
+#    DoT: 
+dot-pure.onedns.net
+########OneDNS
+
+########Hi!XNS DNS 服务器
+##	[已无法使用]嘉兴艾泰德信息技术有限公司提供的 DNS 服务，有网友留言推荐的，之前也没有了解过。最近有网友反馈 ping 不通，不建议使用。 
+# 40.73.101.101
+########Hi!XNS DNS 服务器
+
+
+########TWNIC DNS Quad 101
+##	是由台湾网络资讯中心提供的免费公共 DNS 服务，以台湾地区为人熟悉的地标 台北 101 作为地址。同时支持 IPv4 和 IPv6 两个地址。 最近也增加了 DoH 服务(网友 jt 爆料提供)。
+##	网友 cirno 留言 爆料，101 也可用于 DoT，有需要的朋友可以试试看
+#    IPv4:
+101.101.101.101
+101.102.103.104
+#    IPv6:
+2001:de4::101
+2001:de4::102
+#    DoH: 
+https://dns.twnic.tw/dns-query
+#    DoT: 
+101.101.101.101
+dns.twnic.tw
+
+########TWNIC DNS Quad 101
+
+
+########HiNet 中华电信 DNS
+##	是由台湾省中华电信提供的免费公共 DNS 服务，经过测试大陆也能使用。感谢网友 yesunneo 留言 推荐，经过核实同时支持 IPv4 和 IPv6 两个地址。
+##	网友 cirno 留言 爆料，有可能有 DoH，这个我没试，有需要的可以试一下，如果有知道的也可以给我留言。
+#    IPv4: 
+168.95.1.1
+168.95.192.1
+#    IPv6: 
+2001:b000:168::1
+2001:b000:168::2
+#    DoH: 网友留言爆料，具体能不能用未测试
+https://dns.hinet.net/dns-query
+
+########HiNet 中华电信 DNS
+
+
+########HiNet 澳门电讯 CTM
+##	据说是澳门电讯 CTM 提供的 DNS 服务器，感谢网友 公民北极星 爆料提供。
+#    IPv4: 
+202.175.3.8
+202.175.3.3
+########HiNet 澳门电讯 CTM
+
+
+################国内知名公共 DNS 服务器（Chinese Public DNS Server）################
+
+
+
+
+################国内教育网 DNS 服务器（Educational Public DNS Server）################
+
+########北京邮电大学 IPv6 DNS 服务器
+##	经过测试，非教育网无法解析，至于非本校教育网是否能解析未测试。有 匿名网友 反馈，北邮这个DNS非本校的教育网也无法使用。
+2001:da8:202:10::36
+2001:da8:202:10::37
+########北京邮电大学 IPv6 DNS 服务器
+
+
+########上海交通大学 IPv6 DNS 服务器 
+##	感谢网友 NNN 留言 提醒，上海交大也有 IPv4 DNS 服务器，已添加到下面。网友 兔子 和 runner 留言说上海交大 DNS 服务器现在校外无法使用了，经过测试确实无法解析，特此提醒。
+#    IPv4: 
+202.120.2.100
+202.120.2.101
+#    IPv6:
+2001:da8:8000:1:202:120:2:100
+2001:da8:8000:1:202:120:2:101
+########上海交通大学 IPv6 DNS 服务器 
+
+
+########Yeti DNS Project 注册的 IPv6 DNS 服务器
+##	在 Yeti DNS Project 注册的教育网 IPv6 DNS 服务器，经过测试非教育网无法正常解析，是否局限于本校未测试。
+#    中科院网络信息中心:
+2001:cc0:2fff:1::6666
+#    北京交通大学:
+2001:da8:205:2060::188
+#    清华大学:
+2001:da8:ff:305:20c:29ff:fe1f:a92a
+########Yeti DNS Project 注册的 IPv6 DNS 服务器
+
+
+########清华大学 TUNA 协会 DNS 服务器
+##	据说已经停止对校外用户解析，经过验证，IPv4 确实无法解析，但是 IPv6 解析成功。
+#    IPv4: 经过验证 IPv4 校外无法解析。
+101.6.6.6
+101.6.6.191
+#    IPv6: 最新测试 666 这个IP，似乎是已经停止解析，或者是校外无法使用。
+2001:da8::666
+#    感谢匿名网友爆料提供，这个校外也可以使用。
+2402:f000:1:416:101:6:6:6
+#    DoH: 感谢网友 chntdcs 留言爆料。不过如果 IPv4 校外无法解析的话，那么这个 DoH 可能校外也无法使用，未测试。
+https://101.6.6.6:8443/dns-query
+########清华大学 TUNA 协会 DNS 服务器
+
+
+########北京科技大学 IPv6 DNS 服务器
+##	非教育网无法解析，是否局限于本校未测试。
+2001:da8:208:10::6
+########北京科技大学 IPv6 DNS 服务器
+
+
+########中国科技网 IPv6 DNS 服务器
+##		非教育网无法解析。
+#	IPv6: 有 匿名网友 反馈只有第一个非本校教育网可用。
+2001:cc0::1
+2001:cc0:2fff:2::6
+#	IPv4: 感谢网友 Leao9203 留言爆料。
+159.226.8.6
+159.226.8.7
+########中国科技网 IPv6 DNS 服务器
+
+
+########上海纽约大学DNS服务器
+#	感谢网友@Ariel 发邮件爆料提供
+128.122.0.11
+128.122.0.71
+########上海纽约大学DNS服务器
+
+
+################国内教育网 DNS 服务器（Educational Public DNS Server）################
+
+
+
+
+################海外知名公共 DNS 服务器（Global Public DNS Server）################
+
+########Google Public DNS
+##	Google 提供的公共免费 DNS，应该是国外最流行的 公共 DNS 了，国内无法正常使用，同时提供 IPv4/IPv6/DoT/DoH 服务。
+#    Google IPv4 DNS:
+8.8.8.8
+8.8.4.4
+#    Google IPv6 DNS:
+2001:4860:4860::8888
+2001:4860:4860::8844
+#    DoH:
+https://dns.google/dns-query
+#    只针对 IPv6 的 DoH:
+https://dns64.dns.google/dns-query
+#    DoT: 
+dns.google
+########Google Public DNS
+
+
+########Cloudflare DNS
+##		Cloudflare DNS 是 Cloudflare 与 APNIC 联合推出的号称全球最快的 DNS 服务。
+##		APNIC 是一个管理亚太与大洋洲地区 IP 地址分配的非盈利性组织，1.1.1.1 归 APNIC 所有，现在交给 Cloudflare 来提供 DNS 服务，同时提供 IPv4/IPv6/DoT/DoH 服务。
+#	IPv4:
+1.1.1.1
+1.0.0.1
+#	IPv6:
+2606:4700:4700::1111
+2606:4700:4700::1001
+#	DoH:
+https://cloudflare-dns.com/dns-query
+https://dns.cloudflare.com/dns-query
+https://1.1.1.1/dns-query
+https://1.0.0.1/dns-query
+#	DoT:
+1dot1dot1dot1.cloudflare-dns.com
+dns.cloudflare.com
+one.one.one.one
+
+##		防恶意代码 (拦截恶意代码)
+##		Block malware
+#	IPv4:
+1.1.1.2
+1.0.0.2
+#	IPv6:
+2606:4700:4700::1112
+2606:4700:4700::1002
+#	DoH:
+https://security.cloudflare-dns.com/dns-query
+#	DoT:
+security.cloudflare-dns.com
+
+##		防恶意代码和成人内容 (拦截恶意代码和成人内容)
+##		Block malware and adult content
+#	IPv4:
+1.1.1.3
+1.0.0.3
+#	IPv6:
+2606:4700:4700::1113
+2606:4700:4700::1003
+#	DoH:
+https://family.cloudflare-dns.com/dns-query
+#	DoT: 
+family.cloudflare-dns.com
+########Cloudflare DNS
+
+
+########Quad9 DNS
+##		IBM 发起的 Quad9 提供的公共免费 DNS 服务，同时包含 IPv4/IPv6/DoT/DoH.
+#	IPv4:
+9.9.9.9
+149.112.112.112
+149.112.112.9
+#	IPv6:
+2620:fe::fe
+2620:fe::9
+2620:fe::fe:9
+#	DoH:
+https://dns.quad9.net/dns-query
+https://dns9.quad9.net/dns-query
+#	DoT:
+dns.quad9.net
+dns9.quad9.net
+########Quad9 DNS
+
+
+########DNS.SB
+##		德国的一个公共 DNS 服务商 提供的 DNS 服务器，除了德国之外，还在荷兰/英国/爱沙尼亚/俄罗斯/美国/加拿大/日本/新加坡/印度/韩国/香港/澳大利亚等很多国家和地区有服务器，同时提供 IPv4/IPv6/DoT/DoH 服务。
+##		其中 IPv4 和 IPv6 地址同样可用于 DoT 和 DoH，为了不重复我就不再列举了。
+#	IPv4:
+185.222.222.222	（无法访问）
+45.11.45.11
+#	IPv6:
+2a09::
+2a11::
+#	DoH:
+https://doh.dns.sb/dns-query
+https://doh.sb/dns-query
+https://dns.sb/dns-query
+#	DoT: 
+dot.sb
+dns.sb
+########DNS.SB
+
+
+########Cisco OpenDNS/Cisco Umbrella
+##		OpenDNS 是由美国老牌通信设备商 Cisco 思科 提供的公共 DNS 服务，其中基础版和家庭版提供免费的 IPv4/IPv6/DoH 服务，后改名 Cisco Umbrella。
+#	IPv4:
+208.67.222.222
+208.67.220.220
+208.67.222.220
+208.67.220.222
+#	IPv6:
+2620:119:35::35
+2620:119:53::53
+#	DoH:
+https://doh.opendns.com/dns-query
+https://dns.opendns.com/dns-query
+https://doh.umbrella.com/dns-query
+https://dns.umbrella.com/dns-query
+https://dns.sse.cisco.com/dns-query
+#	DoT: 
+dns.opendns.com
+dns.umbrella.com
+dns.sse.cisco.com
+
+##		OpenDNS FamilyShield
+##		OpenDNS 家庭盾版 DNS，官方介绍是 block adult content 阻止成人内容。
+#	IPv4:
+208.67.220.123
+208.67.222.123
+#	IPv6:
+2620:119:35::123
+2620:119:53::123
+#	DoH: 
+https://familyshield.opendns.com/dns-query
+https://doh.familyshield.opendns.com/dns-query
+https://familyshield.sse.cisco.com/dns-query
+#	DoT:
+familyshield.opendns.com
+familyshield.sse.cisco.com
+########Cisco OpenDNS/Cisco Umbrella
+
+
+########Yandex DNS
+##	Yandex DNS 是俄国最大的搜索引擎 Yandex 提供的 DNS 服务，提供基础版/安全版/家庭版三个版本的 IPv4/IPv6/DoH/DoT 服务。
+##	其中每个版本的 IPv4 和 IPv6 第一个地址同样可用于 DoH 和 DoT，参考基础版，下面两个版本不再重复。
+
+##		基础版（快速可靠）
+##		Quick and reliable DNS
+#	IPv4:
+77.88.8.1
+77.88.8.8
+#	IPv6:
+2a02:6b8::feed:0ff
+2a02:6b8:0:1::feed:0ff
+#	DoH:
+https://common.dot.dns.yandex.net
+https://77.88.8.8
+https://2a02:6b8::feed:0ff
+#	DoT:
+common.dot.dns.yandex.net
+77.88.8.8
+2a02:6b8::feed:0ff
+
+##		安全版（病毒和钓鱼防御）
+##		Protection from virus and fraudulent content
+#	IPv4:
+77.88.8.2
+77.88.8.88
+#	IPv6:
+2a02:6b8::feed:bad
+2a02:6b8:0:1::feed:bad
+#	DoH:
+https://safe.dot.dns.yandex.net
+#	DoT:
+safe.dot.dns.yandex.net
+
+##		家庭版（拦截成人内容）
+##		Without adult content
+#	IPv4:
+77.88.8.3
+77.88.8.7
+#	IPv6:
+2a02:6b8::feed:a11
+2a02:6b8:0:1::feed:a11
+#	DoH:
+https://family.dot.dns.yandex.net
+#	DoT: 
+family.dot.dns.yandex.net
+########Yandex DNS
+
+########COMODO SecureDNS
+##	COMODO 是美国知名的 IT 安全服务商，这个 DNS 是由 COMODO 提供的安全 DNS. 
+8.26.56.26
+8.20.247.20
+########COMODO SecureDNS
+
+########Neustar UltraDNS
+##	Neustar UltraDNS 是美国信息服务公司 Neustar 提供的公共免费 DNS 服务.
+##		基础版（快速可靠）
+##		Unfiltered Resolution
+#	IPv4:
+64.6.64.6
+64.6.65.6
+#	IPv6:
+2620:74:1b::1:1
+2620:74:1c::2:2
+
+##		安全版 (病毒和钓鱼防御)
+##		Threat Protection
+#	IPv4:
+156.154.70.2
+156.154.71.2
+#	IPv6:
+2610:a1:1018::2
+2610:a1:1019::2
+
+##		家庭版 (拦截成人内容)
+##		Family Secure
+#	IPv4:
+156.154.70.3
+156.154.71.3
+#	IPv6: 
+2610:a1:1018::3
+2610:a1:1019::3
+########Neustar UltraDNS
+
+
+########AdGuard DNS
+##	AdGuard 提供的公共免费 DNS 服务.
+##		默认服务器 (拦截广告和跟踪器)
+##		AdGuard DNS will block ads and trackers.
+#	IPv4:
+94.140.14.14
+94.140.15.15
+#    IPv6:
+2a10:50c0::ad1:ff
+2a10:50c0::ad2:ff
+#    DoH:
+https://dns.adguard-dns.com/dns-query
+#    DoT:
+dns.adguard-dns.com
+
+##		无过滤服务器 (不拦截广告、跟踪器)
+##		AdGuard DNS will not block ads, trackers, or any other DNS requests.
+#	IPv4:
+94.140.14.140
+94.140.14.141
+#	IPv6:
+2a10:50c0::1:ff
+2a10:50c0::2:ff
+#	DoH:
+https://unfiltered.adguard-dns.com/dns-query
+#	DoT:
+unfiltered.adguard-dns.com
+
+##		家庭保护服务器 (拦截成人内容)
+##		AdGuard DNS will block ads, trackers, adult content, and enable Safe Search and Safe Mode, where possible.
+#	IPv4:
+94.140.14.15
+94.140.15.16
+#	IPv6:
+2a10:50c0::bad1:ff
+2a10:50c0::bad2:ff
+#	DoH:
+https://family.adguard-dns.com/dns-query
+#	DoT: 
+family.adguard-dns.com
+########AdGuard DNS
+
+
+########Level 3 Parent DNS
+##	美国 Level 3 Parent 公司 提供的 DNS 服务器，如果 Windows 升级出现问题，可以使用这个 DNS 服务器。 
+4.2.2.1
+4.2.2.2
+4.2.2.3
+4.2.2.4
+4.2.2.5
+4.2.2.6
+########Level 3 Parent DNS
+
+########Freenom World DNS
+##	Freenom World 是免费域名商 Freenom 提供的 公共DNS服务，据说国内也可以使用，速度还行，具体未测试。感谢网友 cirno 留言 爆料。
+80.80.80.80
+80.80.81.81
+################海外知名公共 DNS 服务器（Global Public DNS Server）################
+
+
+
